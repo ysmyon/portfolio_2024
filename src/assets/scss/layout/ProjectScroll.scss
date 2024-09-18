@@ -35,42 +35,6 @@
         }
     }
 
-    .project_list_etc {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-between;
-
-        .tit_box {
-            width: 40%;
-            h5 {
-                font-family: "Poppins", system-ui;
-                color: #fff;
-                font-size: 38px;
-                font-weight: 600;
-            }
-        }
-        .list_box {
-            width: 60%;
-            a {
-                display: flex; 
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-                text-decoration: none;
-                padding-bottom: 20px;
-                border-bottom: 1px solid #fff;
-
-                p {
-                    font-family: "Poppins", system-ui;
-                    color: #fff;
-                    font-size: 38px;
-                    font-weight: 500;
-                }
-            }
-        }
-    }
-
     .custom-cursor {
         position: fixed;
         pointer-events: none;

@@ -36,18 +36,6 @@
             </div>
         </div>
 
-        <div class="project_list_etc">
-            <div class="tit_box">
-                <h5>ETC PROJECT</h5>
-            </div>
-            <div class="list_box">
-                <a href="">
-                    <p>project</p>
-                    <img src="@/assets/images/btn_more.png" alt="">
-                </a>
-            </div>
-        </div>
-
         <div class="custom-cursor">
             <p>View Project</p>
             <img src="@/assets/images/cursor_arrow.png" alt="">

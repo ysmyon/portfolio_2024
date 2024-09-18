@@ -3,6 +3,8 @@
     <HeaderView />
     <VisualView />
     <ProjectScrollView />
+    <EtcProjectView />
+
 
     <!-- <nav>
       <router-link to="/">Home</router-link> |
@@ -16,9 +18,10 @@
 import HeaderView from './views/HeaderView.vue';
 import VisualView from './views/VisualView.vue';
 import ProjectScrollView from './views/ProjectScrollView.vue';
+import EtcProjectView from './views/EtcProjectView.vue';
 
 export default {
   name: 'App',
-  components: { HeaderView, VisualView, ProjectScrollView }
+  components: { HeaderView, VisualView, ProjectScrollView, EtcProjectView }
 }
 </script>
