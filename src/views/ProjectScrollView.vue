@@ -35,6 +35,10 @@
                 <img src="@/assets/images/project_03.jpg" alt="">
             </div>
         </div>
+
+        <div class="custom-cursor">
+            <img src="@/assets/images/cursor_arrow.png" alt="">
+        </div>
     </div>
 </template>
 <script>
@@ -53,6 +57,7 @@ export default {
     created() {},
     mounted() {
         this.project_pin();
+        this.custom_cursor();
     },
     unmounted() {},
     methods: {
@@ -62,6 +67,7 @@ export default {
                 trigger: "#project_scroll",
                 pin: true,
                 scrub: true,
+                start: "-10%",
                 end: "+=500%",
                 markers: true
             }
@@ -80,9 +86,30 @@ export default {
                 }
             })
 
-        }
+        },
 
-        
+        custom_cursor() {
+            const panels = document.querySelectorAll('.panel');
+            const customCursor = document.querySelector('.custom-cursor');
+
+            panels.forEach(panel => {
+                // 기본 마우스 커서를 숨기고 .custom-cursor 표시
+                panel.addEventListener('mouseenter', () => {
+                    customCursor.style.display = 'block'; // 커서 보이기
+                });
+
+                // 마우스가 .panel 밖으로 나갔을 때 .custom-cursor 숨기기
+                panel.addEventListener('mouseleave', () => {
+                    customCursor.style.display = 'none'; // 커서 숨기기
+                });
+
+                // 마우스가 움직일 때 .custom-cursor가 따라다니게 함
+                panel.addEventListener('mousemove', (e) => {
+                    customCursor.style.left = e.clientX + 'px'; // clientX는 화면 내 x 좌표
+                    customCursor.style.top = e.clientY + 'px';  // clientY는 화면 내 y 좌표
+                });
+            });
+        }
     }
 }
 </script>
