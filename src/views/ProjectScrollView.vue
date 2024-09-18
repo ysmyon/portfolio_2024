@@ -37,10 +37,10 @@
         </div>
 
         <div class="project_list_etc">
-            <div>
+            <div class="tit_box">
                 <h5>ETC PROJECT</h5>
             </div>
-            <div>
+            <div class="list_box">
                 <a href="">
                     <p>project</p>
                     <img src="@/assets/images/btn_more.png" alt="">
