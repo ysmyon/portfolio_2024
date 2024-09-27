@@ -92,6 +92,7 @@ export default {
         custom_cursor() {
             const panels = document.querySelectorAll('.panel');
             const customCursor = document.querySelector('.custom-cursor');
+            const cursorText = customCursor.querySelector('p');
 
             panels.forEach(panel => {
                 // 기본 마우스 커서를 숨기고 .custom-cursor 표시
@@ -100,7 +101,7 @@ export default {
                     gsap.to(customCursor, { opacity: 1 });
                     setTimeout(() => {
                         customCursor.classList.add('on');
-                        gsap.to('.custom-cursor p', { width: 'auto' });
+                        gsap.to(cursorText, { width: 'auto' });
                     }, 1000)
                 });
 
@@ -108,22 +109,41 @@ export default {
                 panel.addEventListener('mouseleave', () => {
                     customCursor.style.display = 'none'; // 커서 숨기기
                     gsap.to(customCursor, { opacity: 0 }); // 끝: 텍스트 전체가 나타남
-                    gsap.to('.custom-cursor p', { width: '0' });
+                    gsap.to(cursorText, { width: '0' });
 
                     customCursor.classList.remove('on');
                 });
 
                 // 마우스 움직일 때 custom-cursor 위치 업데이트
                 panel.addEventListener('mousemove', (e) => {
-                    // custom-cursor 크기의 절반을 계산하여 가운데 정렬
-                    const cursorWidth = customCursor.offsetWidth / 2;
-                    const cursorHeight = customCursor.offsetHeight / 2;
+                    if(customCursor.classList.contains('on')) {
+                        const customCursorOn = document.querySelector('.custom-cursor');
+                        console.log('on/ ' + customCursorOn.offsetWidth)
 
-                    // 커서가 화면 내에서 가운데 맞도록 좌표 조정
-                    customCursor.style.left = (e.clientX - cursorWidth) + 'px';
-                    customCursor.style.top = (e.clientY - cursorHeight) + 'px';
+                        // custom-cursor 크기의 절반을 계산하여 가운데 정렬
+                        const cursorOnWidth = customCursorOn.offsetWidth / 50;
+                        const cursorOnHeight = customCursorOn.offsetHeight / 50;
+    
+                        // 커서가 화면 내에서 가운데 맞도록 좌표 조정
+                        customCursor.style.left = (e.clientX - cursorOnWidth) + 'px';
+                        customCursor.style.top = (e.clientY - cursorOnHeight) + 'px';
+                    } else {
+                        // custom-cursor 크기의 절반을 계산하여 가운데 정렬
+                        const cursorWidth = customCursor.offsetWidth / 50;
+                        const cursorHeight = customCursor.offsetHeight / 50;
+        
+                        // 커서가 화면 내에서 가운데 맞도록 좌표 조정
+                        customCursor.style.left = (e.clientX - cursorWidth) + 'px';
+                        customCursor.style.top = (e.clientY - cursorHeight) + 'px';
+                        console.log('c// ' + customCursor.offsetWidth)
+                    }
+
                 });
             });
+        },
+
+        changeCursorWidth () {
+
         }
     }
 }

@@ -1,8 +1,9 @@
 <template>
     <div id="main_visual">
+        <img src="@/assets/images/mainVisual.jpg" alt="">
         <div class="txt_box">
             <h5>Web Publisher // Frontend Engineer</h5>
-            <h1>Lee yousang<br />portfolio</h1>
+            <h1>Yousang<br />portfolio</h1>
         </div>
     </div>
 </template>
