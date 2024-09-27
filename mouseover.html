@@ -33,6 +33,7 @@ export default {
       let aberrationIntensity = 0.0;
       let lastPosition = { x: 0.5, y: 0.5 };
       let prevPosition = { x: 0.5, y: 0.5 };
+      let imgLoad = false;
 
       // shaders
       const vertexShader = `
@@ -120,13 +121,35 @@ export default {
         // render
         renderer = new THREE.WebGLRenderer({ alpha: true }); // 배경을 투명하게 설정 가능
         renderer.setSize(imageWidth, imageHeight); // 이미지 크기에 맞게 캔버스 크기를 설정
+        imgLoad = true;
 
         // 기존 이미지를 감추고 캔버스 추가
         imageElement.style.display = 'none';
         imageContainer.appendChild(renderer.domElement);
 
-        window.addEventListener('resize', onWindowResize);
       }
+
+      if (!imgLoad) {
+  // 비동기적으로 이미지 로드 후 initializeScene 호출
+  setTimeout(() => {
+    new THREE.TextureLoader().load(
+      imageElement.src,
+      function (texture) {
+        initializeScene(texture);
+        imgLoad = true; // 이미지를 성공적으로 로드했음을 표시
+
+        // animateScene 호출은 planeMesh가 생성된 이후에만 해야 합니다.
+        animateScene();
+        window.addEventListener('resize', onWindowResize);
+      },
+      undefined,
+      function (error) {
+        console.error('Error loading texture:', error);
+      }
+    );
+  }, 100)
+}
+
 
       function onWindowResize() {
         imageElement.style.display = 'block';
@@ -152,9 +175,9 @@ export default {
       }
 
       // use the existing image from html in the canvas
-      initializeScene(new THREE.TextureLoader().load(imageElement.src));
 
-      animateScene();
+
+      // animateScene();
 
       function animateScene() {
         requestAnimationFrame(animateScene);
