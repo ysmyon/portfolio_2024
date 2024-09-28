@@ -1,7 +1,7 @@
 <template>
     <div id="project_scroll_wrap">
         <div id="project_scroll">
-            <div class="panel">
+           <router-link to="/detail" class="panel">
                 <div class="info_box">
                     <p>A Responsive Website / 2024.01-2024.04(3개월) / 100% role </p>
                     <p>01</p>
@@ -11,8 +11,8 @@
                     <a href=""><div>detail view</div></a>
                 </div>
                 <img src="@/assets/images/project_01.jpg" alt="">
-            </div>
-            <div class="panel">
+            </router-link>
+            <router-link to="/detail" class="panel">
                 <div class="info_box">
                     <p>A Responsive Website / 2024.01-2024.04(3개월) / 100% role </p>
                     <p>02</p>
@@ -22,8 +22,8 @@
                     <a href=""><div>detail view</div></a>
                 </div>
                 <img src="@/assets/images/project_02.jpg" alt="">
-            </div>
-            <div class="panel">
+            </router-link>
+            <router-link to="/detail" class="panel">
                 <div class="info_box">
                     <p>A Responsive Website / 2024.01-2024.04(3개월) / 100% role </p>
                     <p>03</p>
@@ -33,7 +33,7 @@
                     <a href=""><div>detail view</div></a>
                 </div>
                 <img src="@/assets/images/project_03.jpg" alt="">
-            </div>
+            </router-link>
         </div>
 
         <div class="custom-cursor">

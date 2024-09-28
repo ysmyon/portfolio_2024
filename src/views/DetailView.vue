@@ -1,12 +1,16 @@
 <template>
-    <div>about</div>
+    <div>
+        <ProjectDetail />
+    </div>
 </template>
 <script>
+import ProjectDetail from '@/components/ProjectDetail.vue';
+
 export default {
-    components: {},
+    components: { ProjectDetail },
     data() {
         return {
-            sampleData: ''
+    sampleData: ''
         }
     },
     setup() {},
