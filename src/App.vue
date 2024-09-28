@@ -1,9 +1,7 @@
 <template>
   <div id="app">
-    <HeaderView />
-    <VisualView />
-    <ProjectScrollView />
-    <EtcProjectView />
+    <HeaderTop />
+    <HomeView />
 
 
     <!-- <nav>
@@ -15,13 +13,27 @@
 </template>
 
 <script>
-import HeaderView from './views/HeaderView.vue';
-import VisualView from './views/VisualView.vue';
-import ProjectScrollView from './views/ProjectScrollView.vue';
-import EtcProjectView from './views/EtcProjectView.vue';
+import HeaderTop from './components/HeaderTop.vue';
+import HomeView from './views/HomeView.vue';
+import Lenis from 'lenis';
+
 
 export default {
   name: 'App',
-  components: { HeaderView, VisualView, ProjectScrollView, EtcProjectView }
-}
+  components: { HeaderTop, HomeView },
+  mounted() {
+    const lenis = new Lenis()
+
+    // lenis.on('scroll', (e) => {
+    //   console.log(e)
+    // })
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+      }
+    }
 </script>

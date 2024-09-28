@@ -21,7 +21,7 @@
                 padding-bottom: 30px;
 
                 p {
-                    font-family: "Poppins", system-ui;
+                    font-family: 'Poppins';
                     font-size: 20px;
                 }
             }
@@ -30,7 +30,7 @@
                 flex-direction: row;
                 justify-content: space-between;
                 h1 {
-                    font-family: "Poppins", system-ui;
+                    font-family: 'Poppins';
                     font-size: 120px;
                     font-weight: 600;
                     text-transform: uppercase;
@@ -64,22 +64,30 @@
         flex-direction: row;
         align-items: center;
         font-size: 60px;
-        font-family: "Poppins", system-ui;
+        font-family: 'Poppins';
         color: #000;
         font-weight: 600;
         text-transform: uppercase;
         transition: background ease 0.3s;
+        border-radius: 20rem;
+
         p {
             width: 0;
             overflow: hidden;
         }
+        img {
+            filter: invert(1);
+            transition: filter ease 0.3s;
+        }
     }
     .custom-cursor.on {
         background: #00FF3A;
-        border-radius: 20rem;
 
         p {
             margin-right: 20px;
+        }
+        img {
+            filter: invert(0);
         }
     }
 }

@@ -1,0 +1,112 @@
+.bottom_profile {
+    > div {
+        background: #19252B;
+        padding: 5rem 2rem;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        
+        .tit_box {
+            width: 30%;
+            h5 {
+                font-family: 'Poppins';
+                color: #fff;
+                font-size: 38px;
+                font-weight: 600;
+                line-height: 50px;
+                text-transform: uppercase;
+            }
+        }
+        .cont_box {
+            width: 70%;
+        }
+    }
+
+    #bp_top {
+        position: relative;
+        .cont_box {
+            display: flex;
+
+            table {
+                width: 100%;
+                color: #fff;
+                font-size: 22px;
+                text-align: left;
+
+                tr {
+                    th {
+                        font-family: 'Poppins';
+                        text-transform: uppercase;
+                        vertical-align: -webkit-baseline-middle;
+                    }
+                    td {
+                        font-family: 'SUITE';
+                        font-weight: 300;
+                        padding-left: 4%;
+                        padding-bottom: 14px;
+                        line-height: 35px;
+                    }
+                }
+            }
+        }
+    }
+    #bp_top::after {
+        position: absolute;
+        bottom: 0;
+        display: block; 
+        content: ""; 
+        width: calc(100% - 4rem);
+        height: 1px;
+        background: #fff;
+        box-sizing: border-box;
+    }
+
+    #bp_bottom {
+        padding-bottom: 20vh;
+        .cont_box {
+            h2 {
+                font-family: 'Poppins';
+                font-size: 80px;
+                line-height: 95px;
+                color: #fff;
+                font-weight: 600;
+            }
+
+            .cursor_dummy {
+                cursor: pointer;
+                padding: 1rem 2rem;
+                white-space: nowrap;
+                display: inline-flex;
+                flex-direction: row;
+                align-items: center;
+                font-size: 50px;
+                font-family: 'Poppins';
+                color: #000;
+                background: #fff;
+                font-weight: 600;
+                transition: background ease 0.3s;
+                border-radius: 20rem;
+                width: auto;
+                margin-top: 100px;
+
+                p {
+                    overflow: hidden;
+                    margin-right: 20px;
+                }
+                img {
+                    filter: invert(1);
+                    transition: filter ease 0.3s;
+
+                }
+            }
+            .cursor_dummy:hover {
+                background: #00FF3A;
+                img {
+                    filter: invert(0);
+                }
+            }
+        }
+    }
+}

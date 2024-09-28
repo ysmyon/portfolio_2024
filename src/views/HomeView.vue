@@ -1,14 +1,19 @@
 <template>
     <div>
-        <img alt="Vue logo" src="@/assets/logo.png">
-        <HelloWorld msg="Welcome to Your Vue.js App"/>
+        <MainVisual />
+        <ProjectScroll />
+        <EtcProject />
+        <BottomProfile />
     </div>
 </template>
 <script>
-import HelloWorld from '@/components/HelloWorld.vue'
+import MainVisual from '@/components/MainVisual.vue';
+import ProjectScroll from '@/components/ProjectScroll.vue';
+import EtcProject from '@/components/EtcProject.vue';
+import BottomProfile from '@/components/BottomProfile.vue';
 
 export default {
-    components: { HelloWorld },
+    components: { MainVisual, ProjectScroll, EtcProject,BottomProfile },
     data() {
         return {
             sampleData: ''
