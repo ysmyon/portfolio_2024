@@ -22,5 +22,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .detail_wrap {padding: 105px 2rem 50px; background: #22333D;}
+    .detail_wrap {padding: 60px 2rem 50px; background: #22333D;}
 </style>

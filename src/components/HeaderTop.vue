@@ -1,8 +1,8 @@
 <template>
     <header>
-        <a href="">
+        <router-link to="/">
             <img src="@/assets/images/LYS.png" alt="로고">
-        </a>
+        </router-link>
     </header>
 </template>
 <script>
