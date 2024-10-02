@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="detail_wrap">
         <ProjectDetail />
     </div>
 </template>
@@ -20,3 +20,7 @@ export default {
     methods: {}
 }
 </script>
+
+<style lang="scss" scoped>
+    .detail_wrap {padding: 105px 2rem 50px; background: #22333D;}
+</style>

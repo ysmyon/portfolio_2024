@@ -118,7 +118,7 @@ export default {
                 panel.addEventListener('mousemove', (e) => {
                     if(customCursor.classList.contains('on')) {
                         const customCursorOn = document.querySelector('.custom-cursor');
-                        console.log('on/ ' + customCursorOn.offsetWidth)
+                        // console.log('on/ ' + customCursorOn.offsetWidth)
 
                         // custom-cursor 크기의 절반을 계산하여 가운데 정렬
                         const cursorOnWidth = customCursorOn.offsetWidth / 50;
@@ -135,7 +135,7 @@ export default {
                         // 커서가 화면 내에서 가운데 맞도록 좌표 조정
                         customCursor.style.left = (e.clientX - cursorWidth) + 'px';
                         customCursor.style.top = (e.clientY - cursorHeight) + 'px';
-                        console.log('c// ' + customCursor.offsetWidth)
+                        // console.log('c// ' + customCursor.offsetWidth)
                     }
 
                 });

@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <HeaderTop />
-    <HomeView />
+    <router-view/>
+    <BottomBrand />
 
 
     <!-- <nav>
@@ -14,13 +15,13 @@
 
 <script>
 import HeaderTop from './components/HeaderTop.vue';
-import HomeView from './views/HomeView.vue';
+import BottomBrand from './components/BottomBrand.vue';
 import Lenis from 'lenis';
 
 
 export default {
   name: 'App',
-  components: { HeaderTop, HomeView },
+  components: { HeaderTop, BottomBrand },
   mounted() {
     const lenis = new Lenis()
 
