@@ -18,10 +18,9 @@
             text-transform: uppercase;
         }
     }
+
     .cont_box {
         width: 70%;
-    }
-    .cont_box {
         h2 {
             font-family: 'Poppins';
             font-size: 80px;
@@ -57,10 +56,118 @@
 
             }
         }
+
         .cursor_dummy:hover {
             background: #00FF3A;
             img {
                 filter: invert(0);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    #bp_bottom {
+            
+        .tit_box {
+
+            h5 {
+
+            }
+        }
+
+        .cont_box {
+            h2 {
+
+            }
+    
+            .cursor_dummy {
+                
+                p {
+                    font-size: 4vw;
+                }
+                img {
+                    width: 7vw;
+                }
+            }
+    
+            .cursor_dummy:hover {
+                img {
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #bp_bottom {
+            
+        .tit_box {
+
+            h5 {
+                font-size: 5vw;
+                line-height: 5.5vw;
+            }
+        }
+
+        .cont_box {
+            h2 {
+                font-size: 8vw;
+                line-height: 10vw;
+            }
+    
+            .cursor_dummy {
+                
+                p {
+                    font-size: 4vw;
+                }
+                img {
+                    width: 7vw;
+                }
+            }
+    
+            .cursor_dummy:hover {
+                img {
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #bp_bottom {
+        flex-direction: column;
+            
+        .tit_box {
+            width: 100%;
+            margin-bottom: 50px;
+
+            h5 {
+                font-size: 7vw;
+                    line-height: 7.5vw;
+            }
+        }
+
+        .cont_box {
+            width: 100%;
+
+            h2 {
+            }
+    
+            .cursor_dummy {
+                
+                p {
+                }
+                img {
+                }
+            }
+    
+            .cursor_dummy:hover {
+                img {
+
+                }
             }
         }
     }

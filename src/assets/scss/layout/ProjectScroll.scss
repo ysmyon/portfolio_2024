@@ -38,6 +38,10 @@
                     font-weight: 600;
                     text-transform: uppercase;
                     padding: 2rem 0;
+                    width: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                 }
             }
             img {
@@ -91,6 +95,111 @@
         }
         img {
             filter: invert(0);
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #project_scroll_wrap {
+    
+        #project_scroll {
+            .panel {
+        
+                .info_box {
+    
+                    p {
+
+                    }
+                }
+                .tit_box {
+
+                    h1 {
+                        font-size: 9vw;
+                    }
+                }
+                img {
+
+                }
+            }
+        
+            .panel:not(:first-child) {
+
+            }
+        }
+    
+        .custom-cursor {
+    
+            p {
+
+            }
+            img {
+
+            }
+        }
+        .custom-cursor.on {
+    
+            p {
+
+            }
+            img {
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #project_scroll_wrap {
+    
+        #project_scroll {
+            .panel {
+                padding: 2.5rem 1rem;
+
+                .info_box {
+                    padding-bottom: 15px;
+
+                    p {
+                        font-size: 2.5vw;
+                    }
+                    p:last-child {
+                        display: none;
+                    }
+                }
+                .tit_box {
+
+                    h1 {
+                        padding: 1rem 0;
+                        font-size: 9vw;
+                    }
+                }
+                img {
+                    height: 90%;
+                }
+            }
+        
+            .panel:not(:first-child) {
+
+            }
+        }
+    
+        .custom-cursor {
+            display: none;
+
+            p {
+
+            }
+            img {
+
+            }
+        }
+        .custom-cursor.on {
+            
+            p {
+
+            }
+            img {
+
+            }
         }
     }
 }

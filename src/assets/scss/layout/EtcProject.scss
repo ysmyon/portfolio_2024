@@ -57,3 +57,65 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .project_list_etc {
+
+        .tit_box {
+
+            h5 {
+                font-size: 5vw;
+                line-height: 5.5vw;
+            }
+        }
+        .list_box {
+            a {
+                p {
+                    font-size: 3.3vw;
+                }
+
+                img {
+                    width: 3vw;
+                }
+            }
+    
+            a::after {
+            }
+    
+            a:hover {
+            }
+            a:hover::after {
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .project_list_etc {
+        flex-direction: column;
+
+        .tit_box {
+            width: 100%;
+            margin-bottom: 50px;
+
+            h5 {
+                font-size: 7vw;
+            }
+        }
+        .list_box {
+            width: 100%;
+            a {
+                p {
+                }
+            }
+    
+            a::after {
+            }
+    
+            a:hover {
+            }
+            a:hover::after {
+            }
+        }
+    }
+}

@@ -8,7 +8,6 @@
                 </div>
                 <div class="tit_box">
                     <h1>humming dx</h1>
-                    <a href=""><div>detail view</div></a>
                 </div>
                 <img src="@/assets/images/project_01.jpg" alt="">
             </router-link>
@@ -19,7 +18,6 @@
                 </div>
                 <div class="tit_box">
                     <h1>batangsak eng</h1>
-                    <a href=""><div>detail view</div></a>
                 </div>
                 <img src="@/assets/images/project_02.jpg" alt="">
             </router-link>
@@ -30,7 +28,6 @@
                 </div>
                 <div class="tit_box">
                     <h1>cloude city</h1>
-                    <a href=""><div>detail view</div></a>
                 </div>
                 <img src="@/assets/images/project_03.jpg" alt="">
             </router-link>
@@ -140,10 +137,6 @@ export default {
 
                 });
             });
-        },
-
-        changeCursorWidth () {
-
         }
     }
 }
