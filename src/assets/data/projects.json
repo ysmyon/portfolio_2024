@@ -8,7 +8,8 @@
     "comment": [""],
     "skill": [ "html", "css3", "jquery"],
     "image": [ "nuriweb_01", "nuriweb_02", "nuriweb_03" ],
-    "github" : ""
+    "github" : "",
+    "best": false
   },
   {
     "name": "오렌지팜 출고관리 시스템 홈페이지 제작",
@@ -19,7 +20,8 @@
     "comment": [""],
     "skill": [ "html", "css3", "jquery"],
     "image": [ "orange_01" ],
-    "github" : ""
+    "github" : "",
+    "best": false
   },
   {
     "name": "중구패션의류지원센터 메인페이지 리뉴얼",
@@ -30,7 +32,8 @@
     "comment": [""],
     "skill": [ "html", "css3", "jquery"],
     "image": [ "joonggu" ],
-    "github" : ""
+    "github" : "",
+    "best": false
   },
   {
     "name": "GNI 건축사사무소 리뉴얼",
@@ -41,7 +44,8 @@
     "comment": [""],
     "skill": [ "html", "css3", "jquery"],
     "image": [ "gni_01", "gni_02", "gni_03" ],
-    "github" : ""
+    "github" : "",
+    "best": false
   },
   {
     "name": "후성케미컬 홈페이지 제작",
@@ -52,7 +56,8 @@
     "comment": [""],
     "skill": [ "html", "css3", "jquery", "javascript"],
     "image": [ "foosung_01", "foosung_02", "foosung_03", "foosung_04" ],
-    "github" : ""
+    "github" : "",
+    "best": false
   },
   {
     "name": "하프스터디 홈페이지 제작",
@@ -63,7 +68,8 @@
     "comment": [""],
     "skill": [ "html", "css3", "jquery", "javascript"],
     "image": [ "half_01", "half_02", "half_03" ],
-    "github" : ""
+    "github" : "",
+    "best": true
   },
   {
     "name": "인천카톨릭대학교 신학대 홈페이지 제작",
@@ -74,7 +80,8 @@
     "comment": [""],
     "skill": [ "html", "css3", "jquery" ],
     "image": [ "incheon_01", "incheon_02", "incheon_03" ],
-    "github" : ""
+    "github" : "",
+    "best": false
   },
   {
     "name": "인천카톨릭대학교 아고라 홈페이지 제작",
@@ -85,7 +92,8 @@
     "comment": [""],
     "skill": [ "html", "css3", "jquery"],
     "image": [ "agora_01" ],
-    "github" : ""
+    "github" : "",
+    "best": false
   },
   {
     "name": "주식회사 옴니 홈페이지 제작",
@@ -96,7 +104,8 @@
     "comment": [""],
     "skill": [ "html", "css3", "jquery"],
     "image": [ "omni_01", "omni_02", "omni_03" ],
-    "github" : ""
+    "github" : "",
+    "best": false
   },
   {
     "name": "검단수 한방병원 메인페이지 리뉴얼",
@@ -107,7 +116,8 @@
     "comment": [""],
     "skill": [ "html", "css3", "jquery", "javascript"],
     "image": [ "gumdansu_01", "gumdansu_02" ],
-    "github" : ""
+    "github" : "",
+    "best": false
   },
   {
     "name": "제일정형외과 홈페이지 전체 리뉴얼",
@@ -118,7 +128,8 @@
     "comment": [""],
     "skill": [ "html", "css3", "jquery", "javascript"],
     "image": [ "jeil_01" ],
-    "github" : ""
+    "github" : "",
+    "best": false
   },
   {
     "name": "My Classic List [ 개인 프로젝트 ]",
@@ -179,88 +190,108 @@
     "name": "더샵 의정부역 링크시티",
     "url" : "https://xn--9m1bx5jgnderewzcs0gtychzbd34bbyf.kr/",
     "period": "2023.11.21 ~ 2023.11.24",
-    "part": "Publishing : 100%, Frontend : 100%",
-    "work": [""],
-    "comment": ["메인페이지 퍼블, 서브페이지"],
-    "skill": [ "javascript", "html"],
+    "part": "Publishing : 100%",
+    "work": ["Vue 기반 회사 템플릿을 이용해 분양사이트 구축,메인페이지/서브페이지 퍼블, GSAP 라이브러리 첫 사용"],
+    "comment": [""],
+    "skill": [ "vue", "html", "css", "javascript", "jquery", "gsap" ],
     "image": [ "" ],
-    "github" : ""
+    "github" : "",
+    "best": false
   },
   {
     "name": "더샵 광양 레이크센텀",
     "url" : "https://xn--hc0bt2ji8dd5khkaw5twsd2uytxb.kr/",
     "period": "2024.01.11 ~ 2024.01.19",
-    "part": "Publishing : 100%, Frontend : 100%",
-    "work": [""],
-    "comment": ["메인페이지 퍼블, 서브페이지"],
-    "skill": [ "javascript", "html"],
+    "part": "Publishing : 100%",
+    "work": ["Vue 기반 회사 템플릿을 이용해 분양사이트 구축, 메인페이지/서브페이지 퍼블"],
+    "comment": [""],
+    "skill": [ "vue", "html", "css", "javascript", "jquery", "gsap" ],
     "image": [ "" ],
-    "github" : ""
+    "github" : "",
+    "best": false
   },
   {
     "name": "바탕색이엔지",
     "url" : "https://www.batangsak.com/",
     "period": "2024.04.17 ~ 2024.04.19",
-    "part": "Publishing : 100%, Frontend : 100%",
-    "work": [""],
-    "comment": ["메인페이지 퍼블, 서브페이지 레이아웃"],
-    "skill": [ "javascript", "html"],
+    "part": "Publishing : 100%",
+    "work": ["Vue 기반 일반 홈페이지 구축, 메인페이지 퍼블, 서브페이지 레이아웃"],
+    "comment": [""],
+    "skill": [ "vue", "html", "css", "javascript", "jquery", "gsap" ],
     "image": [ "" ],
-    "github" : ""
+    "github" : "",
+    "best": true
+  },
+  {
+    "name": "분양365 App",
+    "url" : "",
+    "period": "2024.04.17 ~ 2024.04.19",
+    "part": "Publishing : 100%",
+    "work": ["사내에서 개발중인 어플리케이션 화면 퍼블리사ㅣㅇ"],
+    "comment": [""],
+    "skill": [ "html", "css", "javascript", "jquery" ],
+    "image": [ "" ],
+    "github" : "",
+    "best": false
   },
   {
     "name": "더샵 속초 프라임뷰",
     "url" : "https://xn--9m1bw2fv1gkndzva25xm4jh6p.kr/",
     "period": "2024.05.20 ~ 2024.05.31",
-    "part": "Publishing : 100%, Frontend : 100%",
-    "work": [""],
-    "comment": ["메인페이지 퍼블, 서브페이지"],
-    "skill": [ "javascript", "html"],
+    "part": "Publishing : 100%",
+    "work": ["Vue 기반 회사 템플릿을 이용해 분양사이트 구축,메인페이지/서브페이지 퍼블"],
+    "comment": [""],
+    "skill": [ "vue", "html", "css", "javascript", "jquery", "gsap" ],
     "image": [ "" ],
-    "github" : ""
+    "github" : "",
+    "best": false
   },
   {
     "name": "푸르지오 스타셀라49",
     "url" : "https://www.prugio.com/ht/2024/starselah49/",
     "period": "2024.06.18 ~ 2024.06.21",
-    "part": "Publishing : 100%, Frontend : 100%",
-    "work": [""],
-    "comment": ["메인페이지 퍼블"],
-    "skill": [ "javascript", "html"],
+    "part": "Publishing : 100%",
+    "work": ["Vue 기반 회사 템플릿을 이용해 분양사이트 구축, 메인페이지/서브페이지 퍼블"],
+    "comment": [""],
+    "skill": [ "vue", "html", "css", "javascript", "jquery", "gsap" ],
     "image": [ "" ],
-    "github" : ""
+    "github" : "",
+    "best": false
   },
   {
     "name": "중앙공원 롯데캐슬",
     "url" : "https://xn----vr6en1kxpjzvc2vnblas87d.com//",
     "period": "2024.07.05 ~ 2024.08.01",
     "part": "Publishing : 100%",
-    "work": [""],
-    "comment": ["메인페이지, 서브페이지 퍼블"],
-    "skill": [ "javascript", "html"],
+    "work": ["Vue 기반 회사 템플릿을 이용해 분양사이트 구축, 메인페이지/서브페이지 퍼블"],
+    "comment": [""],
+    "skill": [ "vue", "html", "css", "javascript", "jquery", "gsap" ],
     "image": [ "" ],
-    "github" : ""
+    "github" : "",
+    "best": false
   },
   {
     "name": "신광교 클라우드 시티",
     "url" : "https://xn--hy1bu3cwyp7ydd9oftd.com/",
     "period": "2024.08.21 ~ 2024.09.06",
-    "part": "Publishing : 100%, Frontend : 100%",
-    "work": [""],
-    "comment": ["메인페이지 퍼블"],
-    "skill": [ "javascript", "html"],
+    "part": "Publishing : 100%",
+    "work": ["Vue 기반 회사 템플릿을 이용해 분양사이트 구축, 메인페이지/서브페이지 퍼블"],
+    "comment": [""],
+    "skill": [ "vue", "html", "css", "javascript", "jquery", "gsap" ],
     "image": [ "" ],
-    "github" : ""
+    "github" : "",
+    "best": true
   },
   {
     "name": "허밍DX",
     "url" : "https://humming-dx.co.kr",
     "period": "2024.08.12 ~ 2024.09.27",
-    "part": "Publishing : 100%, Frontend : 100%",
-    "work": [""],
-    "comment": ["메인페이지 퍼블"],
-    "skill": [ "javascript", "html"],
+    "part": "Publishing : 100%, Frontend : 70%",
+    "work": ["Vue 기반 일반 홈페이지 구축, 메인페이지/서브페이지 퍼블, API 호출을 통한 데이터 바인딩 작업"],
+    "comment": ["OT 단계부터 디자인 쪽에 힘을 실었던 프로젝트, 레퍼런스 사이트에 있는 페이지 효과를 요청하여 다양한 자바스크립트 라이브러리를 경험, vue 라이브러리를 기반으로 개발팀에서 설게한 API를 사용한 데이터 바인딩 경험"],
+    "skill": [ "vue", "html", "css", "javascript", "jquery", "gsap" ],
     "image": [ "" ],
-    "github" : ""
+    "github" : "",
+    "best": true
   }
 ]

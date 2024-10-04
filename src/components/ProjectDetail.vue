@@ -3,7 +3,7 @@
         <div class="panel">
 
             <div class="tit_box">
-                <h1>cloude city</h1>
+                <h1>01. cloude city</h1>
                 <!-- <a href=""><div>detail view</div></a> -->
             </div>
             <img src="@/assets/images/project_03.jpg" alt="">
