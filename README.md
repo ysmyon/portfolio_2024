@@ -25,3 +25,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 npm install --save three
 npm install glslify-loader
+npm i -D vuepress-plugin-chunkload-redirect

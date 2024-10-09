@@ -5,6 +5,7 @@ module.exports = defineConfig({
 })
 
 module.exports = {
+  filenameHashing: true,
   css: {
     loaderOptions: {
       sass: {
@@ -15,4 +16,6 @@ module.exports = {
       },
     },
   },
+  
 };
+
