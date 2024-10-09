@@ -18,7 +18,7 @@
     }
     .list_box {
         width: 70%;
-        a {
+        > a {
             display: flex; 
             flex-direction: row;
             justify-content: space-between;
@@ -44,7 +44,7 @@
 
         }
 
-        a::after {
+        > a::after {
             content: "VIEW";
             display: block;
             position: absolute;
@@ -55,7 +55,7 @@
             transition: opacity ease 0.3s;
         }
 
-        a:hover {
+        > a:hover {
             padding-left: 20px;
             color: #00FF3A;
             border-bottom: 1px solid #00FF3A;
@@ -69,6 +69,34 @@
         a:hover::after {
             opacity: 1;
             color: #00FF3A;
+        }
+
+        .btn_box {
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                p {
+                    display: inline-block;
+                    font-size: 20px;
+                    font-weight: 600;
+                    padding: 15px 30px;
+                    border: 1px solid #fff;
+                    background: #22333D;
+                    color: #fff;
+                    box-sizing: border-box;
+                    border-radius: 25px;
+                    transition: all ease 0.2s;
+                }
+            }
+            a:hover {
+                p {
+                    border: 1px solid #22333D;
+                    background: #fff;
+                    color: #22333D;
+                    background: #fff;
+                }
+            }
         }
     }
 }
@@ -84,7 +112,7 @@
             }
         }
         .list_box {
-            a {
+            > a {
                 p {
                     font-size: 3.3vw;
                 }
@@ -92,14 +120,6 @@
                 img {
                     width: 3vw;
                 }
-            }
-    
-            a::after {
-            }
-    
-            a:hover {
-            }
-            a:hover::after {
             }
         }
     }
@@ -119,18 +139,6 @@
         }
         .list_box {
             width: 100%;
-            a {
-                p {
-                }
-            }
-    
-            a::after {
-            }
-    
-            a:hover {
-            }
-            a:hover::after {
-            }
         }
     }
 }

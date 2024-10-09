@@ -1,7 +1,18 @@
 <template>
     <div id="project_scroll_wrap">
         <div id="project_scroll">
-           <router-link to="/detail" class="panel">
+            <router-link to="/detail" class="panel" v-for="(item, index) in dataBest" :key="index">
+                <div class="info_box">
+                    <p>A Responsive Website / {{ item.period }} / {{ item.part }} </p>
+                    <p>{{ index + 1 }}</p>
+                </div>
+                <div class="tit_box">
+                    <h1>{{ item.name_eng }}</h1>
+                </div>
+                <img src="@/assets/images/project_01.jpg" alt="">
+            </router-link>
+
+           <!-- <router-link to="/detail" class="panel">
                 <div class="info_box">
                     <p>A Responsive Website / 2024.01-2024.04(3개월) / 100% role </p>
                     <p>01</p>
@@ -30,7 +41,7 @@
                     <h1>cloude city</h1>
                 </div>
                 <img src="@/assets/images/project_03.jpg" alt="">
-            </router-link>
+            </router-link> -->
         </div>
 
         <div class="custom-cursor">
@@ -40,15 +51,24 @@
     </div>
 </template>
 <script>
+
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default {
+    props: {
+        dataBest: { // 부모로부터 받아오는 props
+            type: Array,
+            default: () => []
+        }
+    },
     components: {},
     data() {
         return {
-            sampleData: ''
+            projectData: [],
+            bestProjects: [],
+            elseProjects: []
         }
     },
     setup() {},
@@ -137,7 +157,8 @@ export default {
 
                 });
             });
-        }
+        },
+
     }
 }
 </script>

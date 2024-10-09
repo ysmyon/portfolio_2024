@@ -1,6 +1,8 @@
 [
   {
+    "code": "01",
     "name": "누리웹 PDS 게시판 리뉴얼",
+    "name_eng": "",
     "url" : "",
     "period": "2020.1.10 ~ 2020.1.20",
     "part": "Publishing : 100%",
@@ -12,7 +14,9 @@
     "best": false
   },
   {
+    "code": "02",
     "name": "오렌지팜 출고관리 시스템 홈페이지 제작",
+    "name_eng": "",
     "url" : "",
     "period": "2020.7.01 ~ 2020.8.03",
     "part": "Publishing : 100%",
@@ -24,7 +28,9 @@
     "best": false
   },
   {
+    "code": "03",
     "name": "중구패션의류지원센터 메인페이지 리뉴얼",
+    "name_eng": "",
     "url" : "http://www.jfcenter.co.kr/",
     "period": "2020.7.13 ~ 2020.8.14",
     "part": "Publishing : 100%",
@@ -36,7 +42,9 @@
     "best": false
   },
   {
+    "code": "04",
     "name": "GNI 건축사사무소 리뉴얼",
+    "name_eng": "",
     "url" : "http://www.archikwi.com/",
     "period": "2020.10.06 ~ 2020.12.17",
     "part": "Publishing : 100%",
@@ -48,7 +56,9 @@
     "best": false
   },
   {
+    "code": "05",
     "name": "후성케미컬 홈페이지 제작",
+    "name_eng": "",
     "url" : "https://www.foosungchem.com/",
     "period": "2020.10.13 ~ 2021.01.19",
     "part": "Publishing : 100%",
@@ -60,7 +70,9 @@
     "best": false
   },
   {
+    "code": "06",
     "name": "하프스터디 홈페이지 제작",
+    "name_eng": "half study",
     "url" : "https://www.halfstudy.com/",
     "period": "2020.10.16 ~ 2021.04.14",
     "part": "Publishing : 100%",
@@ -72,7 +84,9 @@
     "best": true
   },
   {
+    "code": "07",
     "name": "인천카톨릭대학교 신학대 홈페이지 제작",
+    "name_eng": "",
     "url" : "https://shin.iccu.ac.kr",
     "period": "2021.12.20 ~ 2022.02.11",
     "part": "Publishing : 100%",
@@ -84,7 +98,9 @@
     "best": false
   },
   {
+    "code": "08",
     "name": "인천카톨릭대학교 아고라 홈페이지 제작",
+    "name_eng": "",
     "url" : "https://agora.iccu.ac.kr",
     "period": "2021.12.27 ~ 2022.01.07",
     "part": "Publishing : 100%",
@@ -96,7 +112,9 @@
     "best": false
   },
   {
+    "code": "09",
     "name": "주식회사 옴니 홈페이지 제작",
+    "name_eng": "",
     "url" : "http://www.omnicreate.co.kr/",
     "period": "2022.01.15 ~ 2022.2.21",
     "part": "Publishing : 100%",
@@ -108,7 +126,9 @@
     "best": false
   },
   {
+    "code": "10",
     "name": "검단수 한방병원 메인페이지 리뉴얼",
+    "name_eng": "",
     "url" : "http://www.geomdansoo.com/",
     "period": "2022.03.28 ~ 2022.4.11",
     "part": "Publishing : 100%",
@@ -120,7 +140,9 @@
     "best": false
   },
   {
+    "code": "11",
     "name": "제일정형외과 홈페이지 전체 리뉴얼",
+    "name_eng": "",
     "url" : "https://www.cheilos.com/",
     "period": "2022.4.4 ~ 2022.4.15",
     "part": "Publishing : 100%",
@@ -132,7 +154,9 @@
     "best": false
   },
   {
+    "code": "12",
     "name": "My Classic List [ 개인 프로젝트 ]",
+    "name_eng": "",
     "url" : "http://myclassiclist-env.eba-gczrcczm.ap-northeast-2.elasticbeanstalk.com/",
     "period": "2023.3.1 ~ 2023.4.21",
     "part": "Publishing : 100%, Frontend : 100%, Backend 100%",
@@ -145,10 +169,13 @@
     "comment": ["React를 이용한 첫 개인 프로젝트입니다. React 이외에 db와 서버 쪽도 작업을 해야했기에 어려움이 많았지만 Backend 쪽을 경험해 볼 수 있는 좋은 기회가 되었습니다."],
     "skill": [ "react", "javascript", "nodejs", "html", "css3"],
     "image": [ "mcl_01", "mcl_02", "mcl_03", "mcl_04" ],
-    "github" : "https://github.com/marcoys/mcl_2"
+    "github" : "https://github.com/marcoys/mcl_2",
+    "best": false
   },
   {
+    "code": "13",
     "name": "Portfolio 홈페이지 [ 개인 프로젝트 ]",
+    "name_eng": "",
     "url" : "",
     "period": "2023.3.20 ~ ",
     "part": "Publishing : 100%, Frontend : 100%",
@@ -158,10 +185,13 @@
     "Component별로 scss파일을 구분하여 작업이 가능하여 수정 작업이 용이했습니다."],
     "skill": [ "react", "javascript", "sass", "html"],
     "image": [ "portfolio_01", "portfolio_02", "portfolio_03"],
-    "github" : "https://github.com/marcoys/portfolio"
+    "github" : "https://github.com/marcoys/portfolio",
+    "best": false
   },
   {
+    "code": "14",
     "name": "Matchday [ 개인 프로젝트 ]",
+    "name_eng": "",
     "url" : "https://marcoys.github.io/matchday/",
     "period": "2023.4.1 ~ 2023.4.26",
     "part": "Publishing : 100%, Frontend : 100%",
@@ -172,10 +202,13 @@
     ],
     "skill": [ "react", "javascript", "sass", "html"],
     "image": [ "matchday_01", "matchday_02", "matchday_03" ],
-    "github" : "https://github.com/marcoys/matchday"
+    "github" : "https://github.com/marcoys/matchday",
+    "best": false
   },
   {
+    "code": "15",
     "name": "Portfolio 새버전 [ 개인 프로젝트 ]",
+    "name_eng": "",
     "url" : "https://marcoys.github.io/portfolio_new/",
     "period": "2023.7.3 ~ 2023.7.16",
     "part": "Publishing : 100%, Frontend : 100%",
@@ -184,10 +217,13 @@
     ],
     "skill": [ "react", "javascript", "sass", "html"],
     "image": [ "port_new_01", "port_new_02", "port_new_03", "port_new_04" ],
-    "github" : "https://github.com/marcoys/portfolio_new"
+    "github" : "https://github.com/marcoys/portfolio_new",
+    "best": false
   },
   {
+    "code": "16",
     "name": "더샵 의정부역 링크시티",
+    "name_eng": "",
     "url" : "https://xn--9m1bx5jgnderewzcs0gtychzbd34bbyf.kr/",
     "period": "2023.11.21 ~ 2023.11.24",
     "part": "Publishing : 100%",
@@ -199,7 +235,9 @@
     "best": false
   },
   {
+    "code": "17",
     "name": "더샵 광양 레이크센텀",
+    "name_eng": "",
     "url" : "https://xn--hc0bt2ji8dd5khkaw5twsd2uytxb.kr/",
     "period": "2024.01.11 ~ 2024.01.19",
     "part": "Publishing : 100%",
@@ -211,7 +249,9 @@
     "best": false
   },
   {
+    "code": "18",
     "name": "바탕색이엔지",
+    "name_eng": "batangsak eng",
     "url" : "https://www.batangsak.com/",
     "period": "2024.04.17 ~ 2024.04.19",
     "part": "Publishing : 100%",
@@ -223,7 +263,9 @@
     "best": true
   },
   {
+    "code": "19",
     "name": "분양365 App",
+    "name_eng": "",
     "url" : "",
     "period": "2024.04.17 ~ 2024.04.19",
     "part": "Publishing : 100%",
@@ -235,7 +277,9 @@
     "best": false
   },
   {
+    "code": "20",
     "name": "더샵 속초 프라임뷰",
+    "name_eng": "",
     "url" : "https://xn--9m1bw2fv1gkndzva25xm4jh6p.kr/",
     "period": "2024.05.20 ~ 2024.05.31",
     "part": "Publishing : 100%",
@@ -247,7 +291,9 @@
     "best": false
   },
   {
+    "code": "21",
     "name": "푸르지오 스타셀라49",
+    "name_eng": "",
     "url" : "https://www.prugio.com/ht/2024/starselah49/",
     "period": "2024.06.18 ~ 2024.06.21",
     "part": "Publishing : 100%",
@@ -259,7 +305,9 @@
     "best": false
   },
   {
+    "code": "22",
     "name": "중앙공원 롯데캐슬",
+    "name_eng": "",
     "url" : "https://xn----vr6en1kxpjzvc2vnblas87d.com//",
     "period": "2024.07.05 ~ 2024.08.01",
     "part": "Publishing : 100%",
@@ -271,7 +319,9 @@
     "best": false
   },
   {
+    "code": "23",
     "name": "신광교 클라우드 시티",
+    "name_eng": "cloude city",
     "url" : "https://xn--hy1bu3cwyp7ydd9oftd.com/",
     "period": "2024.08.21 ~ 2024.09.06",
     "part": "Publishing : 100%",
@@ -283,7 +333,9 @@
     "best": true
   },
   {
+    "code": "24",
     "name": "허밍DX",
+    "name_eng": "humming dx",
     "url" : "https://humming-dx.co.kr",
     "period": "2024.08.12 ~ 2024.09.27",
     "part": "Publishing : 100%, Frontend : 70%",
