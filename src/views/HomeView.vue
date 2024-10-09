@@ -7,7 +7,8 @@
     </div>
 </template>
 <script>
-import MainVisual from '@/components/MainVisual.vue';
+
+import MainVisual from '@/components/MainVIsual.vue';
 import ProjectScroll from '@/components/ProjectScroll.vue';
 import EtcProject from '@/components/EtcProject.vue';
 import BottomProfile from '@/components/BottomProfile.vue';

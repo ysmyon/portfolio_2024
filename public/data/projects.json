@@ -9,7 +9,7 @@
     "work": ["반응형 홈페이지로 제작", "클라이언트와 커뮤니케이션을 위한 게시판형 홈페이지"],
     "comment": [""],
     "skill": [ "html", "css3", "jquery"],
-    "image": [ "nuriweb_01", "nuriweb_02", "nuriweb_03" ],
+    "image": [ "nuriweb_01.gif", "nuriweb_02.gif", "nuriweb_03.gif" ],
     "github" : "",
     "best": false
   },
@@ -23,7 +23,7 @@
     "work": ["PC버전만 제작", "출고관리를 위한 관리자 대쉬보드 홈페이지"],
     "comment": [""],
     "skill": [ "html", "css3", "jquery"],
-    "image": [ "orange_01" ],
+    "image": [ "orange_01.gif" ],
     "github" : "",
     "best": false
   },
@@ -37,7 +37,7 @@
     "work": ["반응형 페이지 제작"],
     "comment": [""],
     "skill": [ "html", "css3", "jquery"],
-    "image": [ "joonggu" ],
+    "image": [ "joonggu.gif" ],
     "github" : "",
     "best": false
   },
@@ -51,7 +51,7 @@
     "work": ["전체 페이지 리뉴얼", "반응형 페이지로 작업", "갤러리형 페이지"],
     "comment": [""],
     "skill": [ "html", "css3", "jquery"],
-    "image": [ "gni_01", "gni_02", "gni_03" ],
+    "image": [ "gni_01.gif", "gni_02.gif", "gni_03.gif" ],
     "github" : "",
     "best": false
   },
@@ -65,7 +65,7 @@
     "work": ["반응형 홈페이지로 제작"],
     "comment": [""],
     "skill": [ "html", "css3", "jquery", "javascript"],
-    "image": [ "foosung_01", "foosung_02", "foosung_03", "foosung_04" ],
+    "image": [ "foosung_01.gif", "foosung_02.gif", "foosung_03.gif", "foosung_04.gif" ],
     "github" : "",
     "best": false
   },
@@ -79,7 +79,7 @@
     "work": ["반응형 홈페이지로 제작", "AOS, bx슬라이더 등 라이브러리 사용"],
     "comment": [""],
     "skill": [ "html", "css3", "jquery", "javascript"],
-    "image": [ "half_01", "half_02", "half_03" ],
+    "image": [ "halfstudy.jpg" ],
     "github" : "",
     "best": true
   },
@@ -93,7 +93,7 @@
     "work": ["반응형 홈페이지로 제작"],
     "comment": [""],
     "skill": [ "html", "css3", "jquery" ],
-    "image": [ "incheon_01", "incheon_02", "incheon_03" ],
+    "image": [ "incheon_01.gif", "incheon_02.gif", "incheon_03.gif" ],
     "github" : "",
     "best": false
   },
@@ -107,7 +107,7 @@
     "work": ["반응형 홈페이지로 제작", "게시판 형 홈페이지"],
     "comment": [""],
     "skill": [ "html", "css3", "jquery"],
-    "image": [ "agora_01" ],
+    "image": [ "agora_01.gif" ],
     "github" : "",
     "best": false
   },
@@ -121,7 +121,7 @@
     "work": ["반응형 홈페이지로 제작"],
     "comment": [""],
     "skill": [ "html", "css3", "jquery"],
-    "image": [ "omni_01", "omni_02", "omni_03" ],
+    "image": [ "omni_01.gif", "omni_02.gif", "omni_03.gif" ],
     "github" : "",
     "best": false
   },
@@ -135,7 +135,7 @@
     "work": ["PC버전만 제작"],
     "comment": [""],
     "skill": [ "html", "css3", "jquery", "javascript"],
-    "image": [ "gumdansu_01", "gumdansu_02" ],
+    "image": [ "gumdansu_01.gif", "gumdansu_02.gif" ],
     "github" : "",
     "best": false
   },
@@ -149,7 +149,7 @@
     "work": ["반응형 홈페이지로 제작"],
     "comment": [""],
     "skill": [ "html", "css3", "jquery", "javascript"],
-    "image": [ "jeil_01" ],
+    "image": [ "jeil_01.gif" ],
     "github" : "",
     "best": false
   },
@@ -168,7 +168,7 @@
     ""],
     "comment": ["React를 이용한 첫 개인 프로젝트입니다. React 이외에 db와 서버 쪽도 작업을 해야했기에 어려움이 많았지만 Backend 쪽을 경험해 볼 수 있는 좋은 기회가 되었습니다."],
     "skill": [ "react", "javascript", "nodejs", "html", "css3"],
-    "image": [ "mcl_01", "mcl_02", "mcl_03", "mcl_04" ],
+    "image": [ "mcl_01.gif", "mcl_02.gif", "mcl_03.gif", "mcl_04.gif" ],
     "github" : "https://github.com/marcoys/mcl_2",
     "best": false
   },
@@ -184,7 +184,7 @@
     "css에 변수와 중첩이 사용가능하여 가독성이 좋아지고 효율적인 css코딩이 가능했습니다.",
     "Component별로 scss파일을 구분하여 작업이 가능하여 수정 작업이 용이했습니다."],
     "skill": [ "react", "javascript", "sass", "html"],
-    "image": [ "portfolio_01", "portfolio_02", "portfolio_03"],
+    "image": [ "portfolio_01.gif", "portfolio_02.gif", "portfolio_03.gif"],
     "github" : "https://github.com/marcoys/portfolio",
     "best": false
   },
@@ -201,7 +201,7 @@
     "리덕스 툴킷을 사용해봄으로써 상태관리의 편의성을 느낄 수 있었습니다. "
     ],
     "skill": [ "react", "javascript", "sass", "html"],
-    "image": [ "matchday_01", "matchday_02", "matchday_03" ],
+    "image": [ "matchday_01.gif", "matchday_02.gif", "matchday_03.gif" ],
     "github" : "https://github.com/marcoys/matchday",
     "best": false
   },
@@ -216,7 +216,7 @@
     "comment": ["기존 포트폴리오가 맘에 안들어 다시 제작한 포트폴리오 사이트", "반응형으로 제작", "JSON 파일을 이용해 불필요하게 반복되는 코드를 방지"
     ],
     "skill": [ "react", "javascript", "sass", "html"],
-    "image": [ "port_new_01", "port_new_02", "port_new_03", "port_new_04" ],
+    "image": [ "port_new_01.gif", "port_new_02.gif", "port_new_03.gif", "port_new_04.gif" ],
     "github" : "https://github.com/marcoys/portfolio_new",
     "best": false
   },
@@ -230,7 +230,7 @@
     "work": ["Vue 기반 회사 템플릿을 이용해 분양사이트 구축,메인페이지/서브페이지 퍼블, GSAP 라이브러리 첫 사용"],
     "comment": [""],
     "skill": [ "vue", "html", "css", "javascript", "jquery", "gsap" ],
-    "image": [ "" ],
+    "image": [ "link_city_01.jpg", "link_city_02.jpg", "link_city_03.jpg", "link_city_04.jpg", "link_city_05.jpg", "link_city_06.jpg"],
     "github" : "",
     "best": false
   },
@@ -245,7 +245,7 @@
     "comment": [""],
     "skill": [ "vue", "html", "css", "javascript", "jquery", "gsap" ],
     "image": [ "" ],
-    "github" : "",
+    "github" : "lakecenturm.jpg",
     "best": false
   },
   {
@@ -258,7 +258,7 @@
     "work": ["Vue 기반 일반 홈페이지 구축, 메인페이지 퍼블, 서브페이지 레이아웃"],
     "comment": [""],
     "skill": [ "vue", "html", "css", "javascript", "jquery", "gsap" ],
-    "image": [ "" ],
+    "image": [ "batangsak.jpg" ],
     "github" : "",
     "best": true
   },
@@ -272,7 +272,7 @@
     "work": ["사내에서 개발중인 어플리케이션 화면 퍼블리사ㅣㅇ"],
     "comment": [""],
     "skill": [ "html", "css", "javascript", "jquery" ],
-    "image": [ "" ],
+    "image": [ "bunyang365.jpg" ],
     "github" : "",
     "best": false
   },
@@ -286,7 +286,7 @@
     "work": ["Vue 기반 회사 템플릿을 이용해 분양사이트 구축,메인페이지/서브페이지 퍼블"],
     "comment": [""],
     "skill": [ "vue", "html", "css", "javascript", "jquery", "gsap" ],
-    "image": [ "" ],
+    "image": [ "sokcho.jpg" ],
     "github" : "",
     "best": false
   },
@@ -300,7 +300,7 @@
     "work": ["Vue 기반 회사 템플릿을 이용해 분양사이트 구축, 메인페이지/서브페이지 퍼블"],
     "comment": [""],
     "skill": [ "vue", "html", "css", "javascript", "jquery", "gsap" ],
-    "image": [ "" ],
+    "image": [ "starcella_01.jpg", "starcella_02.jpg","starcella_03.jpg", "starcella_04.jpg", "starcella_05.jpg", "starcella_footer.jpg"  ],
     "github" : "",
     "best": false
   },
@@ -314,13 +314,13 @@
     "work": ["Vue 기반 회사 템플릿을 이용해 분양사이트 구축, 메인페이지/서브페이지 퍼블"],
     "comment": [""],
     "skill": [ "vue", "html", "css", "javascript", "jquery", "gsap" ],
-    "image": [ "" ],
+    "image": [ "lottecastle.jpg" ],
     "github" : "",
     "best": false
   },
   {
     "code": "23",
-    "name": "신광교 클라우드 시티",
+    "name": "신광교 클라우드 시티 티저",
     "name_eng": "cloude city",
     "url" : "https://xn--hy1bu3cwyp7ydd9oftd.com/",
     "period": "2024.08.21 ~ 2024.09.06",
@@ -328,7 +328,7 @@
     "work": ["Vue 기반 회사 템플릿을 이용해 분양사이트 구축, 메인페이지/서브페이지 퍼블"],
     "comment": [""],
     "skill": [ "vue", "html", "css", "javascript", "jquery", "gsap" ],
-    "image": [ "" ],
+    "image": [ "cloudeCity.jpg" ],
     "github" : "",
     "best": true
   },
@@ -342,7 +342,7 @@
     "work": ["Vue 기반 일반 홈페이지 구축, 메인페이지/서브페이지 퍼블, API 호출을 통한 데이터 바인딩 작업"],
     "comment": ["OT 단계부터 디자인 쪽에 힘을 실었던 프로젝트, 레퍼런스 사이트에 있는 페이지 효과를 요청하여 다양한 자바스크립트 라이브러리를 경험, vue 라이브러리를 기반으로 개발팀에서 설게한 API를 사용한 데이터 바인딩 경험"],
     "skill": [ "vue", "html", "css", "javascript", "jquery", "gsap" ],
-    "image": [ "" ],
+    "image": [ "humming.jpg" ],
     "github" : "",
     "best": true
   }

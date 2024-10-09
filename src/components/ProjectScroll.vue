@@ -9,7 +9,7 @@
                 <div class="tit_box">
                     <h1>{{ item.name_eng }}</h1>
                 </div>
-                <img src="@/assets/images/project_01.jpg" alt="">
+                <img :src="`/images/${ item.image[0] }`" alt="">
             </router-link>
 
            <!-- <router-link to="/detail" class="panel">
