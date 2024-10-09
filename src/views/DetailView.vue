@@ -1,13 +1,7 @@
 <template>
     <div class="detail_wrap">
         <ProjectDetail 
-        :name=$route.query.name 
         :code=$route.query.code 
-        :image=$route.query.image 
-        :period=$route.query.period 
-        :work=this.work
-        :comment=this.comment
-        :skill=this.skill
         />
     </div>
 </template>
@@ -19,17 +13,11 @@ export default {
     data() {
         return {
                 selectData: [],
-                work: [],
-                comment: []
             }
         },
     setup() { },
-    created() {
-        this.work = [this.$route.query.work.split(",")]
-    },
-    mounted() {
-        console.log(this.$route.query.work);
-    },
+    created() {},
+    mounted() {},
     unmounted() {},
     methods: {}
 }

@@ -5,13 +5,7 @@
             <router-link :to="{ 
                 name: 'detail', 
                 query: { 
-                    name: `${item.name}`, 
                     code: `${item.code}`,
-                    image: `${item.image}`,
-                    period: `${item.period}`,
-                    work: `${item.work}`,
-                    comment: `${item.comment}`,
-                    skill: `${item.skill}`,
                 }}" 
                 class="panel" v-for="(item, index) in dataBest" :key="index">
                 <div class="info_box">

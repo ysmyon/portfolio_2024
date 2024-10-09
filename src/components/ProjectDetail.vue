@@ -3,10 +3,9 @@
         <div class="panel">
 
             <div class="tit_box">
-                <h1>{{ code }}. {{ name }}</h1>
-                <!-- <a href=""><div>detail view</div></a> -->
+                <h1>{{ code }}. {{ this.projectData.name }}</h1>
             </div>
-            <img :src="`/images/${image}`" alt="">
+            <img :src="`/images/${this.projectData.image}`" alt="">
     
             <div class="cont_wrap">
                     <div class="tit_box">
@@ -16,17 +15,17 @@
                         <table>
                             <tr> 
                                 <th>작업기간</th>
-                                <td>{{ period }}</td>
+                                <td>{{ this.projectData.period }}</td>
                             </tr>
                             <tr> 
                                 <th>참여파트</th>
-                                <td>퍼블리싱</td>
+                                <td>{{ this.projectData.part }}</td>
                             </tr>
                             <tr> 
                                 <th>작업내용</th>
                                 <td>
                                     <ul>
-                                        <li v-for="(item, index) in work[0]" :key="index">{{ item }}</li>
+                                        <li v-for="(item, index) in this.projectData.work" :key="index">{{ item }}</li>
                                     </ul>
                                 </td>
                             </tr>
@@ -34,7 +33,7 @@
                                 <th>코멘트</th>
                                 <td>
                                     <ul>
-                                        <li v-for="(item, index) in comment[0]" :key="index">{{ item }}</li>
+                                        <li v-for="(item, index) in this.projectData.comment" :key="index">{{ item }}</li>
                                     </ul>
                                 </td>
                             </tr>
@@ -50,7 +49,7 @@
             </div>
     
             <div class="btn_box">
-                <a href="" target="_blank" class="btn_go">VIEW PROJECT</a>
+                <a :href="`${this.projectData.url}`" target="_blank" class="btn_go">VIEW PROJECT</a>
             </div>
         </div>
 
@@ -70,26 +69,39 @@
 <script>
 export default {
     props: {
-        name: String,
         code: String,
-        url: String,
-        period: String,
-        part: String,
-        work: Array,
-        comment: Array,
-        skill: Array,
-        image: Array,
-
     },
     components: {},
     data() {
         return {
-            sampleData: '',
+            projectData: null,
         }
     },
     setup() {},
     created() {
-        console.log(this.comment)
+        const urlParams = new URL(location.href).searchParams;
+        const name = urlParams.get('code');
+        console.log(name)
+
+        this.$axios
+            .get('/data/projects.json')
+            .then((res) => {
+                const filteredData = res.data.filter(project => project.code === name);
+
+                if (filteredData.length > 0) {
+                    this.projectData = filteredData[0];
+                } else {
+                    console.log('No matching project found');
+                }
+
+                console.log(this.projectData)
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+            .finally(() => {
+                console.log('마지막')
+            })
     },
     mounted() {},
     unmounted() {},
