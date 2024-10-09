@@ -1,7 +1,19 @@
 <template>
     <div id="project_scroll_wrap">
         <div id="project_scroll">
-            <router-link to="/detail" class="panel" v-for="(item, index) in dataBest" :key="index">
+            <!-- <router-link :to="`/detail?code=${item.code}`" class="panel" v-for="(item, index) in dataBest" :key="index"> -->
+            <router-link :to="{ 
+                name: 'detail', 
+                query: { 
+                    name: `${item.name}`, 
+                    code: `${item.code}`,
+                    image: `${item.image}`,
+                    period: `${item.period}`,
+                    work: `${item.work}`,
+                    comment: `${item.comment}`,
+                    skill: `${item.skill}`,
+                }}" 
+                class="panel" v-for="(item, index) in dataBest" :key="index">
                 <div class="info_box">
                     <p>A Responsive Website / {{ item.period }} / {{ item.part }} </p>
                     <p>{{ index + 1 }}</p>
@@ -11,37 +23,6 @@
                 </div>
                 <img :src="`/images/${ item.image[0] }`" alt="">
             </router-link>
-
-           <!-- <router-link to="/detail" class="panel">
-                <div class="info_box">
-                    <p>A Responsive Website / 2024.01-2024.04(3개월) / 100% role </p>
-                    <p>01</p>
-                </div>
-                <div class="tit_box">
-                    <h1>humming dx</h1>
-                </div>
-                <img src="@/assets/images/project_01.jpg" alt="">
-            </router-link>
-            <router-link to="/detail" class="panel">
-                <div class="info_box">
-                    <p>A Responsive Website / 2024.01-2024.04(3개월) / 100% role </p>
-                    <p>02</p>
-                </div>
-                <div class="tit_box">
-                    <h1>batangsak eng</h1>
-                </div>
-                <img src="@/assets/images/project_02.jpg" alt="">
-            </router-link>
-            <router-link to="/detail" class="panel">
-                <div class="info_box">
-                    <p>A Responsive Website / 2024.01-2024.04(3개월) / 100% role </p>
-                    <p>03</p>
-                </div>
-                <div class="tit_box">
-                    <h1>cloude city</h1>
-                </div>
-                <img src="@/assets/images/project_03.jpg" alt="">
-            </router-link> -->
         </div>
 
         <div class="custom-cursor">
@@ -59,7 +40,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default {
     props: {
         dataBest: { // 부모로부터 받아오는 props
-            type: Array,
+            type: [Array, Object],
             default: () => []
         }
     },

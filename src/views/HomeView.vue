@@ -56,7 +56,9 @@ export default {
                 console.log('마지막')
             })
     },
-    mounted() {},
+    mounted() {
+        console.log(this.dataBest)
+    },
     unmounted() {},
     methods: {}
 }

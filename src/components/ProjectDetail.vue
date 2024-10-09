@@ -3,10 +3,10 @@
         <div class="panel">
 
             <div class="tit_box">
-                <h1>01. cloude city</h1>
+                <h1>{{ code }}. {{ name }}</h1>
                 <!-- <a href=""><div>detail view</div></a> -->
             </div>
-            <img src="@/assets/images/project_03.jpg" alt="">
+            <img :src="`/images/${image}`" alt="">
     
             <div class="cont_wrap">
                     <div class="tit_box">
@@ -16,7 +16,7 @@
                         <table>
                             <tr> 
                                 <th>작업기간</th>
-                                <td>2024.09.11 ~ 2024.04.11</td>
+                                <td>{{ period }}</td>
                             </tr>
                             <tr> 
                                 <th>참여파트</th>
@@ -26,15 +26,17 @@
                                 <th>작업내용</th>
                                 <td>
                                     <ul>
-                                        <li>fwknfwekfnwlkefnwk</li>
-                                        <li>fwknfwekfnwlkefnwk</li>
-                                        <li>fwknfwekfnwlkefnwk</li>
+                                        <li v-for="(item, index) in work[0]" :key="index">{{ item }}</li>
                                     </ul>
                                 </td>
                             </tr>
                             <tr> 
                                 <th>코멘트</th>
-                                <td>라가루갸둫자ㅣ두지ㅏ둘지ㅏㄷ루ㅡ잗릊;디릊</td>
+                                <td>
+                                    <ul>
+                                        <li v-for="(item, index) in comment[0]" :key="index">{{ item }}</li>
+                                    </ul>
+                                </td>
                             </tr>
                             <tr> 
                                 <th>사용스택</th>
@@ -67,14 +69,28 @@
 </template>
 <script>
 export default {
+    props: {
+        name: String,
+        code: String,
+        url: String,
+        period: String,
+        part: String,
+        work: Array,
+        comment: Array,
+        skill: Array,
+        image: Array,
+
+    },
     components: {},
     data() {
         return {
-            sampleData: ''
+            sampleData: '',
         }
     },
     setup() {},
-    created() {},
+    created() {
+        console.log(this.comment)
+    },
     mounted() {},
     unmounted() {},
     methods: {}

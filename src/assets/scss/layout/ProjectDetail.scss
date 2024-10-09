@@ -67,14 +67,18 @@
                             font-family: 'Poppins';
                             text-transform: uppercase;
                             vertical-align: top;
-                            padding-top: 5px;
+                            padding-top: 3px;
                         }
                         td {
                             font-family: 'SUITE';
                             font-weight: 300;
                             padding-left: 4%;
-                            padding-bottom: 14px;
-                            line-height: 35px;
+                            padding-bottom: 20px;
+                            ul {
+                                li {
+                                    line-height: 32px;
+                                }
+                            }
                         }
                     }
                 }

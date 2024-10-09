@@ -1,6 +1,14 @@
 <template>
     <div class="detail_wrap">
-        <ProjectDetail />
+        <ProjectDetail 
+        :name=$route.query.name 
+        :code=$route.query.code 
+        :image=$route.query.image 
+        :period=$route.query.period 
+        :work=this.work
+        :comment=this.comment
+        :skill=this.skill
+        />
     </div>
 </template>
 <script>
@@ -10,12 +18,18 @@ export default {
     components: { ProjectDetail },
     data() {
         return {
-    sampleData: ''
-        }
+                selectData: [],
+                work: [],
+                comment: []
+            }
+        },
+    setup() { },
+    created() {
+        this.work = [this.$route.query.work.split(",")]
     },
-    setup() {},
-    created() {},
-    mounted() {},
+    mounted() {
+        console.log(this.$route.query.work);
+    },
     unmounted() {},
     methods: {}
 }
