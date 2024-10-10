@@ -1,6 +1,6 @@
 <template>
     <div>
-        <MainVisual />
+
         <ProjectScroll v-if="dataBest.length" :dataBest="dataBest" />
         <EtcProject v-if="dataNormal.length" :dataNormal="dataNormal"/>
         <BottomProfile />
@@ -8,13 +8,13 @@
 </template>
 <script>
 
-import MainVisual from '@/components/MainVisual.vue';
+
 import ProjectScroll from '@/components/ProjectScroll.vue';
 import EtcProject from '@/components/EtcProject.vue';
 import BottomProfile from '@/components/BottomProfile.vue';
 
 export default {
-    components: { MainVisual, ProjectScroll, EtcProject,BottomProfile },
+    components: {  ProjectScroll, EtcProject,BottomProfile },
     data() {
         return {
             dataBest: [],
