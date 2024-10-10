@@ -240,5 +240,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    @import "@/assets/scss/layout/Visual.scss"
+    @import "@/assets/scss/layout/Visual.scss";
 </style>
