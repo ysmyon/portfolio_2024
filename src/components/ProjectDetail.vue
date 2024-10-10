@@ -59,8 +59,8 @@
                 <p>02.CLOUD CITY<span>HYUNDAI ENGINEERING</span></p>
             </router-link>
             <router-link to="/"><img src="@/assets/images/icon_list.png" alt="메인"></router-link>
-            <router-link to="/about">
-                <p>03.BATANGSAK ENG<span></span></p>
+            <router-link :to="`/detail?code=${ this.prevData.code }`" >
+                <p>{{ this.prevData.code }}.{{ this.prevData.name }}<span></span></p>
                 <img src="@/assets/images/arrow_next.png" alt="다음">
             </router-link>
         </div>
@@ -74,27 +74,36 @@ export default {
     components: {},
     data() {
         return {
+            prevData: null,
             projectData: null,
+            nextData: null
         }
     },
     setup() {},
     created() {
         const urlParams = new URL(location.href).searchParams;
         const name = urlParams.get('code');
-        console.log(name)
+        const prevCode = urlParams.get('code') - 1;
+        const nextCode = urlParams.get('code') + 1;
+        console.log(name);
 
         this.$axios
             .get('/data/projects.json')
             .then((res) => {
+                
+                const filteredPrevdData = res.data.filter(project => project.code == prevCode);
                 const filteredData = res.data.filter(project => project.code === name);
+                const filteredNextData = res.data.filter(project => project.code == nextCode);
 
                 if (filteredData.length > 0) {
+                    this.prevData = filteredPrevdData[0];
                     this.projectData = filteredData[0];
+                    this.nextData = filteredNextData[0];
                 } else {
                     console.log('No matching project found');
                 }
 
-                console.log(this.projectData)
+                console.log(this.prevData)
             })
             .catch((error) => {
                 console.log(error)
