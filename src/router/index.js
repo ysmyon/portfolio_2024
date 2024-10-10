@@ -2,7 +2,7 @@
 
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import HomeView from '@/views/HomeView.vue'
 
 Vue.use(VueRouter)
 
@@ -18,7 +18,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (detail.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "detail" */ '../views/DetailView.vue')
+    component: () => import(/* webpackChunkName: "detail" */ '@/views/DetailView.vue')
   }
 ]
 
