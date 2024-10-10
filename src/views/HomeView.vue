@@ -8,10 +8,11 @@
 </template>
 <script>
 
-import MainVisual from '@/components/MainVisual.vue';
+
 import ProjectScroll from '@/components/ProjectScroll.vue';
 import EtcProject from '@/components/EtcProject.vue';
 import BottomProfile from '@/components/BottomProfile.vue';
+import MainVisual from '@/components/MainVisual.vue';
 
 export default {
     components: { MainVisual, ProjectScroll, EtcProject,BottomProfile },
