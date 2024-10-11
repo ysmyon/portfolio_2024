@@ -7,6 +7,7 @@
                 <h2>if you just want to say hello, <br />feel free to reach out to me</h2>
 
                 <div class="cursor_dummy">
+                    <div class="wave"></div>
                     <p>ysmyon12@naver.com</p>
                     <img src="@/assets/images/cursor_arrow.png" alt="">
                 </div>

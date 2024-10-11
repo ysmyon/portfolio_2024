@@ -4,10 +4,10 @@
             <h5>ETC PROJECT</h5>
         </div>
         <div class="list_box">
-            <a href="" v-for="(item, index) in data" :key="index">
+            <router-link :to="{ name: 'detail', query: { code: `${item.code}`}}" v-for="(item, index) in data" :key="index">
                 <p>{{ item.name }}</p>
                 <img src="@/assets/images/btn_more.png" alt="">
-            </a>
+            </router-link>
 
             <div class="btn_box">
                 <a @click="loadDataMore()"><p>More</p></a>

@@ -45,10 +45,30 @@
             border-radius: 20rem;
             width: auto;
             margin-top: 100px;
+            position: relative;
+            overflow: hidden;
+
+            .wave {
+                position: absolute;
+                bottom: -410%;
+                left: 15%;
+                background: #00FF3A;
+                width: 700px;
+                height: 700px;
+                margin-left: -150px;
+                margin-bottom: -301px;
+                transform-origin: 50% 48%;
+                border-radius: 43%;
+                
+                transition-duration: 2s;
+                transition-property: margin-bottom;
+                transition-timing-function: ease;
+            }
 
             p {
                 overflow: hidden;
                 margin-right: 20px;
+                z-index: 2;
             }
             img {
                 filter: invert(1);
@@ -58,12 +78,20 @@
         }
 
         .cursor_dummy:hover {
-            background: #00FF3A;
+            // background: #00FF3A;
+            .wave {
+                margin-bottom: -90px;
+                animation: rotate 2000ms infinite linear;
+            }
             img {
                 filter: invert(0);
             }
         }
     }
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    from { transform: rotate(360deg); }
 }
 
 @media screen and (max-width: 1150px) {

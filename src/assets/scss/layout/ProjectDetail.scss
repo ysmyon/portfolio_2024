@@ -109,24 +109,27 @@
         margin: 50px 0;
 
         a {
-            align-self: center;
             text-decoration: none;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-
-            p {
-                font-family: 'Poppins';
-                font-size: 38px;
-                color: #fff;
-                font-weight: 500;
-                width: 100%;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
+            
+            div {
+                align-self: center;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
     
-                span {
-                    font-size: 20px;
+                p {
+                    font-family: 'Poppins';
+                    font-size: 38px;
+                    color: #fff;
+                    font-weight: 500;
+                    width: 100%;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+        
+                    span {
+                        font-size: 20px;
+                    }
                 }
             }
         }

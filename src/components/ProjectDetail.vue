@@ -1,9 +1,9 @@
 <template>
-    <div class="detail">
+    <div class="detail" v-if="this.projectData">
         <div class="panel">
 
             <div class="tit_box">
-                <h1>{{ code }}. {{ this.projectData.name }}</h1>
+                <h1>{{ this.projectData.code }}. {{ this.projectData.name }}</h1>
             </div>
             <img :src="`/images/${this.projectData.image}`" alt="">
     
@@ -55,61 +55,75 @@
 
         <div class="navigation">
             <router-link to="/about">
-                <img src="@/assets/images/arrow_prev.png" alt="이전">
-                <p>02.CLOUD CITY<span>HYUNDAI ENGINEERING</span></p>
+                <div v-if="this.nextData">
+                    <img src="@/assets/images/arrow_prev.png" alt="이전">
+                    <p>{{ this.nextData.code }}. {{ this.nextData.name }}<span></span></p>
+                </div>
             </router-link>
             <router-link to="/"><img src="@/assets/images/icon_list.png" alt="메인"></router-link>
-            <router-link :to="`/detail?code=${ this.prevData.code }`" >
-                <p>{{ this.prevData.code }}.{{ this.prevData.name }}<span></span></p>
-                <img src="@/assets/images/arrow_next.png" alt="다음">
+            <router-link to="/">
+                <div v-if="this.prevData">
+                    <p>{{ this.prevData.code }}. {{ this.prevData.name }}<span></span></p>
+                    <img src="@/assets/images/arrow_next.png" alt="다음">
+                </div>
             </router-link>
         </div>
     </div>
 </template>
 <script>
 export default {
-    props: {
-        code: String,
-    },
+    // props: {
+    //     code: String,
+    // },
     components: {},
     data() {
         return {
             prevData: null,
             projectData: null,
-            nextData: null
+            nextData: null,
         }
     },
     setup() {},
     created() {
         const urlParams = new URL(location.href).searchParams;
-        const name = urlParams.get('code');
-        const prevCode = urlParams.get('code') - 1;
-        const nextCode = urlParams.get('code') + 1;
-        console.log(name);
+        const name = parseInt(urlParams.get('code'));
+        const prevCode = parseInt(name) - 1;
+        const nextCode = parseInt(name) + 1;
+        // console.log(name);
 
         this.$axios
             .get('/data/projects.json')
             .then((res) => {
                 
                 const filteredPrevdData = res.data.filter(project => project.code == prevCode);
-                const filteredData = res.data.filter(project => project.code === name);
+                const filteredData = res.data.filter(project => project.code == name);
                 const filteredNextData = res.data.filter(project => project.code == nextCode);
 
                 if (filteredData.length > 0) {
-                    this.prevData = filteredPrevdData[0];
+                    if(filteredPrevdData) {
+                        this.prevData = filteredPrevdData[0];
+                    } else {
+                        this.prevData = null;
+                    }
+
                     this.projectData = filteredData[0];
-                    this.nextData = filteredNextData[0];
+
+                    if(filteredNextData) {
+                        this.nextData = filteredNextData[0];
+                    } else {
+                        this.nextData = null;
+                    }
                 } else {
                     console.log('No matching project found');
                 }
 
-                console.log(this.prevData)
+                // console.log(filteredPrevdData)
             })
             .catch((error) => {
                 console.log(error)
             })
             .finally(() => {
-                console.log('마지막')
+                // console.log('마지막')
             })
     },
     mounted() {},
@@ -119,5 +133,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    @import '@/assets/scss/layout/ProjectDetail.scss'
+    @import '@/assets/scss/layout/ProjectDetail.scss';
 </style>

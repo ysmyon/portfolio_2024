@@ -26,8 +26,13 @@ const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes,
-  scrollBehavior () {
-    return { x: 0, y: 0 }
+  scrollBehavior(to, from, savedPosition) {
+    // savedPosition은 브라우저의 뒤로 가기/앞으로 가기 등을 했을 때 스크롤 위치를 유지하는 옵션
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { x: 0, y: 0 } // 화면 맨 위로 이동
+    }
   }
 })
 

@@ -2,11 +2,7 @@
     <div id="project_scroll_wrap">
         <div id="project_scroll">
             <!-- <router-link :to="`/detail?code=${item.code}`" class="panel" v-for="(item, index) in dataBest" :key="index"> -->
-            <router-link :to="{ 
-                name: 'detail', 
-                query: { 
-                    code: `${item.code}`,
-                }}" 
+            <router-link :to="{ name: 'detail', query: { code: `${item.code}`}}" 
                 class="panel" v-for="(item, index) in dataBest" :key="index">
                 <div class="info_box">
                     <p>A Responsive Website / {{ item.period }} / {{ item.part }} </p>

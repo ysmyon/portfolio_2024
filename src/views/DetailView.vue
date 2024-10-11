@@ -1,7 +1,7 @@
 <template>
     <div class="detail_wrap">
         <ProjectDetail 
-        :code=$route.query.code 
+
         />
     </div>
 </template>
@@ -12,11 +12,17 @@ export default {
     components: { ProjectDetail },
     data() {
         return {
-                selectData: [],
+                paramsCode: 0
             }
         },
     setup() { },
-    created() {},
+    created() {
+        const urlParams = new URL(location.href).searchParams;
+        const name = parseInt(urlParams.get('code'));
+
+        console.log(name)
+        this.paramsCode = name
+    },
     mounted() {},
     unmounted() {},
     methods: {}
