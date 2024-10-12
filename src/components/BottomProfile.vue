@@ -62,7 +62,7 @@
                         <li><img src="/images/illust.png" alt="illust"></li>
                         <li><img src="/images/vue.png" alt="vue"></li>
                         <li><img src="/images/react.png" alt="react"></li>
-                        <li><img src="/images/node.js.png" alt="node.js"></li>
+                        <li><img src="/images/nodejs.png" alt="node.js"></li>
                         <li><img src="/images/nextjs.png" alt="nextjs"></li>
                     </ul>
                 </div>
