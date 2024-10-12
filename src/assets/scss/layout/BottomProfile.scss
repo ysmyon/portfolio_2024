@@ -27,26 +27,42 @@
     #bp_top {
         position: relative;
         .cont_box {
-            display: flex;
+            .wrap {
+                display: flex;
 
-            table {
-                width: 100%;
-                color: #fff;
-                font-size: 22px;
-                text-align: left;
-
-                tr {
-                    th {
-                        font-family: 'Poppins';
-                        text-transform: uppercase;
-                        vertical-align: -webkit-baseline-middle;
+                table {
+                    width: 100%;
+                    color: #fff;
+                    font-size: 22px;
+                    text-align: left;
+    
+                    tr {
+                        th {
+                            font-family: 'Poppins';
+                            text-transform: uppercase;
+                            vertical-align: -webkit-baseline-middle;
+                        }
+                        td {
+                            font-family: 'SUITE';
+                            font-weight: 300;
+                            padding-left: 4%;
+                            padding-bottom: 14px;
+                            line-height: 35px;
+                        }
                     }
-                    td {
-                        font-family: 'SUITE';
-                        font-weight: 300;
-                        padding-left: 4%;
-                        padding-bottom: 14px;
-                        line-height: 35px;
+                }
+            }
+        }
+        .stack_box {
+            margin-top: 50px;
+            ul {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                gap: 3%;
+                li {
+                    img {
+                        width: 100%;
                     }
                 }
             }

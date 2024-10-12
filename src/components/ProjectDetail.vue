@@ -40,7 +40,11 @@
                             <tr> 
                                 <th>사용스택</th>
                                 <td>
-                                    <img src="@/assets/images/icon_html.png" alt="html">
+                                    <div class="stack">
+                                        <div v-for="(item, index) in this.projectData.skill" :key="index">
+                                            <img :src="`/images/${item}.png`" alt="">
+                                        </div>
+                                    </div>
                                 </td>
                             </tr>
                         </table>
@@ -54,23 +58,25 @@
         </div>
 
         <div class="navigation">
-            <router-link to="/about">
-                <div v-if="this.nextData">
+            <a @click.prevent="changeNextData()">
+                <div v-if="this.nextData" >
                     <img src="@/assets/images/arrow_prev.png" alt="이전">
                     <p>{{ this.nextData.code }}. {{ this.nextData.name }}<span></span></p>
                 </div>
-            </router-link>
+            </a>
             <router-link to="/"><img src="@/assets/images/icon_list.png" alt="메인"></router-link>
-            <router-link to="/">
+            <a @click.prevent="changePrevData()">
                 <div v-if="this.prevData">
                     <p>{{ this.prevData.code }}. {{ this.prevData.name }}<span></span></p>
                     <img src="@/assets/images/arrow_next.png" alt="다음">
                 </div>
-            </router-link>
+            </a>
         </div>
     </div>
 </template>
 <script>
+import router from '@/router';
+
 export default {
     // props: {
     //     code: String,
@@ -128,7 +134,15 @@ export default {
     },
     mounted() {},
     unmounted() {},
-    methods: {}
+    methods: {
+        changePrevData() {
+            router.push({ path: 'detail', query: { code: this.prevData.code }})
+            this.projectData = this.prevData
+        },
+        changeNextData() {
+            router.push({ path: 'detail', query: { code: this.nextData.code }})
+        }
+    }
 }
 </script>
 

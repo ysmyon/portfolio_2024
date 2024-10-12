@@ -51,10 +51,10 @@
             .wave {
                 position: absolute;
                 bottom: -410%;
-                left: 15%;
+                left: 13%;
                 background: #00FF3A;
-                width: 700px;
-                height: 700px;
+                width: 900px;
+                height: 900px;
                 margin-left: -150px;
                 margin-bottom: -301px;
                 transform-origin: 50% 48%;
@@ -80,7 +80,7 @@
         .cursor_dummy:hover {
             // background: #00FF3A;
             .wave {
-                margin-bottom: -90px;
+                margin-bottom: 50px;
                 animation: rotate 2000ms infinite linear;
             }
             img {

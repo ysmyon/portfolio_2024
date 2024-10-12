@@ -8,7 +8,7 @@
     "part": "Publishing : 100%",
     "work": ["반응형 홈페이지로 제작", "클라이언트와 커뮤니케이션을 위한 게시판형 홈페이지"],
     "comment": [""],
-    "skill": [ "html", "css3", "jquery"],
+    "skill": [ "html", "css", "jquery"],
     "image": [ "nuriweb_01.gif", "nuriweb_02.gif", "nuriweb_03.gif" ],
     "github" : "",
     "best": false
@@ -22,7 +22,7 @@
     "part": "Publishing : 100%",
     "work": ["PC버전만 제작", "출고관리를 위한 관리자 대쉬보드 홈페이지"],
     "comment": [""],
-    "skill": [ "html", "css3", "jquery"],
+    "skill": [ "html", "css", "jquery"],
     "image": [ "orange_01.gif" ],
     "github" : "",
     "best": false
@@ -36,7 +36,7 @@
     "part": "Publishing : 100%",
     "work": ["반응형 페이지 제작"],
     "comment": [""],
-    "skill": [ "html", "css3", "jquery"],
+    "skill": [ "html", "css", "jquery"],
     "image": [ "joonggu.gif" ],
     "github" : "",
     "best": false
@@ -50,7 +50,7 @@
     "part": "Publishing : 100%",
     "work": ["전체 페이지 리뉴얼", "반응형 페이지로 작업", "갤러리형 페이지"],
     "comment": [""],
-    "skill": [ "html", "css3", "jquery"],
+    "skill": [ "html", "css", "jquery"],
     "image": [ "gni_01.gif", "gni_02.gif", "gni_03.gif" ],
     "github" : "",
     "best": false
@@ -64,7 +64,7 @@
     "part": "Publishing : 100%",
     "work": ["반응형 홈페이지로 제작"],
     "comment": [""],
-    "skill": [ "html", "css3", "jquery", "javascript"],
+    "skill": [ "html", "css", "jquery", "javascript"],
     "image": [ "foosung_01.gif", "foosung_02.gif", "foosung_03.gif", "foosung_04.gif" ],
     "github" : "",
     "best": false
@@ -78,7 +78,7 @@
     "part": "Publishing : 100%",
     "work": ["반응형 홈페이지로 제작", "AOS, bx슬라이더 등 라이브러리 사용"],
     "comment": [""],
-    "skill": [ "html", "css3", "jquery", "javascript"],
+    "skill": [ "html", "css", "jquery", "javascript"],
     "image": [ "halfstudy.jpg" ],
     "github" : "",
     "best": true
@@ -92,7 +92,7 @@
     "part": "Publishing : 100%",
     "work": ["반응형 홈페이지로 제작"],
     "comment": [""],
-    "skill": [ "html", "css3", "jquery" ],
+    "skill": [ "html", "css", "jquery" ],
     "image": [ "incheon_01.gif", "incheon_02.gif", "incheon_03.gif" ],
     "github" : "",
     "best": false
@@ -106,7 +106,7 @@
     "part": "Publishing : 100%",
     "work": ["반응형 홈페이지로 제작", "게시판 형 홈페이지"],
     "comment": [""],
-    "skill": [ "html", "css3", "jquery"],
+    "skill": [ "html", "css", "jquery"],
     "image": [ "agora_01.gif" ],
     "github" : "",
     "best": false
@@ -120,7 +120,7 @@
     "part": "Publishing : 100%",
     "work": ["반응형 홈페이지로 제작"],
     "comment": [""],
-    "skill": [ "html", "css3", "jquery"],
+    "skill": [ "html", "css", "jquery"],
     "image": [ "omni_01.gif", "omni_02.gif", "omni_03.gif" ],
     "github" : "",
     "best": false
@@ -134,7 +134,7 @@
     "part": "Publishing : 100%",
     "work": ["PC버전만 제작"],
     "comment": [""],
-    "skill": [ "html", "css3", "jquery", "javascript"],
+    "skill": [ "html", "css", "jquery", "javascript"],
     "image": [ "gumdansu_01.gif", "gumdansu_02.gif" ],
     "github" : "",
     "best": false
@@ -148,7 +148,7 @@
     "part": "Publishing : 100%",
     "work": ["반응형 홈페이지로 제작"],
     "comment": [""],
-    "skill": [ "html", "css3", "jquery", "javascript"],
+    "skill": [ "html", "css", "jquery", "javascript"],
     "image": [ "jeil_01.gif" ],
     "github" : "",
     "best": false
@@ -167,7 +167,7 @@
     "AWS beanstalk를 이용해 배포하였습니다.",
     ""],
     "comment": ["React를 이용한 첫 개인 프로젝트입니다. React 이외에 db와 서버 쪽도 작업을 해야했기에 어려움이 많았지만 Backend 쪽을 경험해 볼 수 있는 좋은 기회가 되었습니다."],
-    "skill": [ "react", "javascript", "nodejs", "html", "css3"],
+    "skill": [ "react", "javascript", "nodejs", "html", "css"],
     "image": [ "mcl_01.gif", "mcl_02.gif", "mcl_03.gif", "mcl_04.gif" ],
     "github" : "https://github.com/marcoys/mcl_2",
     "best": false

@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <HeaderTop />
-    <router-view/>
+    <transition name="routing-fade">
+      <router-view/>
+    </transition>
     <BottomBrand />
   </div>
 </template>
@@ -32,3 +34,11 @@ export default {
     }
 </script>
 
+<style>
+.routing-fade-enter-active {
+  transition: opacity 1s;
+}
+.routing-fade-enter, .routing-fade-leave-to {
+  opacity: 0;
+}
+</style>

@@ -32,8 +32,13 @@ footer, header, hgroup, main, menu, nav, section {
 *[hidden] {
     display: none;
 }
+
+html {
+	background: #22333D;
+}
 body {
 	line-height: 1;
+	background: #22333D;
 }
 menu, ol, ul {
 	list-style: none;
