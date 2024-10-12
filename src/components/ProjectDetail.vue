@@ -87,35 +87,41 @@ export default {
             prevData: null,
             projectData: null,
             nextData: null,
+            prevCode: 0,
+            nextCode: 0,
+            filteredPrevData: [],
+            filteredNextData: [],
+            allData: [],
         }
     },
     setup() {},
     created() {
         const urlParams = new URL(location.href).searchParams;
         const name = parseInt(urlParams.get('code'));
-        const prevCode = parseInt(name) - 1;
-        const nextCode = parseInt(name) + 1;
+        this.prevCode = parseInt(name) - 1;
+        this.nextCode = parseInt(name) + 1;
         // console.log(name);
 
         this.$axios
             .get('/data/projects.json')
             .then((res) => {
                 
-                const filteredPrevdData = res.data.filter(project => project.code == prevCode);
+                this.allData = res.data;
+                this.filteredPrevData = res.data.filter(project => project.code == this.prevCode);
                 const filteredData = res.data.filter(project => project.code == name);
-                const filteredNextData = res.data.filter(project => project.code == nextCode);
+                this.filteredNextData = res.data.filter(project => project.code == this.nextCode);
 
                 if (filteredData.length > 0) {
-                    if(filteredPrevdData) {
-                        this.prevData = filteredPrevdData[0];
+                    if(this.filteredPrevData) {
+                        this.prevData = this.filteredPrevData[0];
                     } else {
                         this.prevData = null;
                     }
 
                     this.projectData = filteredData[0];
 
-                    if(filteredNextData) {
-                        this.nextData = filteredNextData[0];
+                    if(this.filteredNextData) {
+                        this.nextData = this.filteredNextData[0];
                     } else {
                         this.nextData = null;
                     }
@@ -123,7 +129,7 @@ export default {
                     console.log('No matching project found');
                 }
 
-                // console.log(filteredPrevdData)
+                // console.log(filteredPrevData)
             })
             .catch((error) => {
                 console.log(error)
@@ -135,12 +141,33 @@ export default {
     mounted() {},
     unmounted() {},
     methods: {
+        changeNextData() {
+            router.push({ path: 'detail', query: { code: this.nextData.code }})
+            this.projectData = this.nextData
+            this.nextCode = parseInt(this.projectData.code) + 1;
+            this.filteredNextData = this.allData.filter(project => project.code == this.nextCode);
+
+            if(this.filteredNextData) {
+                this.nextData = this.filteredNextData[0];
+                
+            } else {
+                this.nextData = null;
+            }
+            
+            // console.log(this.nextData)
+        },
         changePrevData() {
             router.push({ path: 'detail', query: { code: this.prevData.code }})
             this.projectData = this.prevData
-        },
-        changeNextData() {
-            router.push({ path: 'detail', query: { code: this.nextData.code }})
+            this.prevCode = parseInt(this.projectData.code) - 1;
+            this.filteredPrevData = this.allData.filter(project => project.code == this.prevCode);
+
+            if(this.filteredPrevData) {
+                this.prevData = this.filteredPrevData[0];
+                
+            } else {
+                this.prevData = null;
+            }
         }
     }
 }
