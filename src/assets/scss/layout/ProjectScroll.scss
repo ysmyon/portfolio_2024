@@ -43,8 +43,17 @@
                     overflow: hidden;
                     text-overflow: ellipsis;
                 }
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    justify-content: center;
+                    img {
+                        width: auto;
+                    }
+                }
             }
-            img {
+            > img {
                 width: 100%;
                 height: 70%;
                 object-fit: cover;

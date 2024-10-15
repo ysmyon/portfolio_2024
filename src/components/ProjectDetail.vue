@@ -4,6 +4,10 @@
 
             <div class="tit_box">
                 <h1>{{ this.projectData.code }}. {{ this.projectData.name }}</h1>
+                <div v-if="this.projectData.winner">
+                    <img src="/images/gdweb_prize_01.png" alt="">
+                    <img src="/images/gdweb_prize_02.png" alt="">
+                </div>
             </div>
             <img :src="`/images/${this.projectData.image}`" alt="">
     

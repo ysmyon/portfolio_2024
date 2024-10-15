@@ -9,7 +9,14 @@
                     <p>{{ index + 1 }}</p>
                 </div>
                 <div class="tit_box">
-                    <h1>{{ item.name_eng }}</h1>
+                    <h1>
+                        {{ item.name_eng }}
+                        
+                    </h1>
+                    <div v-if="item.winner">
+                        <img src="/images/gdweb_prize_01.png" alt="">
+                        <img src="/images/gdweb_prize_02.png" alt="">
+                    </div>
                 </div>
                 <img :src="`/images/${ item.image[0] }`" alt="">
             </router-link>
