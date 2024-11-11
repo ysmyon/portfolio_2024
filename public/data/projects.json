@@ -345,6 +345,48 @@
       "image": [ "humming.jpg" ],
       "github" : "",
       "best": true
+    },
+    {
+      "code": "25",
+      "name": "양주역 푸르지오",
+      "name_eng": "yangju purgio",
+      "url" : "https://www.prugio.com/ht/2024/yangju/",
+      "period": "2024.10.11 ~ 2024.10.25",
+      "part": "Publishing : 100%",
+      "work": ["Vue 기반 회사 템플릿을 이용해 분양사이트 구축, 메인페이지/서브페이지 퍼블", "적응형으로 제작"],
+      "comment": ["적응형 홈페이지에 오픈이 1,2차 두 번에 걸쳐 이루어진 프로젝트라 작업시간이 생각보다 걸림", "fullpage.js 무료버전에서 자바스크립트를 이용해 좌우 이동이 되도록 작업"],
+      "skill": [ "vue", "html", "css", "javascript", "jquery", "gsap" ],
+      "image": [ "yangju.jpg" ],
+      "github" : "",
+      "best": false
+    },
+    {
+      "code": "26",
+      "name": "르엘 리버파크 센텀",
+      "name_eng": "leel",
+      "url" : "https://xn--2w2b2dy4gc4grygkwrplbc1g.com/",
+      "period": "2024.10.21 ~ 2024.10.25",
+      "part": "Publishing : 100%",
+      "work": ["Vue 기반 회사 템플릿을 이용해 분양사이트 구축, 메인페이지/서브페이지 퍼블", "반응형으로 제작"],
+      "comment": [""],
+      "skill": [ "vue", "html", "css", "javascript", "jquery", "gsap" ],
+      "image": [ "yangju.jpg" ],
+      "github" : "",
+      "best": false
+    },
+    {
+      "code": "27",
+      "name": "더샵 퍼스트월드 상봉역",
+      "name_eng": "the sharp sangbong",
+      "url" : "https://xn--9m1b22ap9xjubf7i2vufhb.kr/",
+      "period": "2024.11.04 ~ 2024.11.12",
+      "part": "Publishing : 100%",
+      "work": ["Vue 기반 회사 템플릿을 이용해 분양사이트 구축, 메인페이지/서브페이지 퍼블", "반응형으로 제작", "ScrollTrigger를 이용해 자연스러운 모션 구현"],
+      "comment": ["aos 라이브러리를 사용하지 않고 메인페이지에 scrolltrigger를 이용하여 모션을 구현, 오히려 더 깔끔한 느낌", "모바일에서 컨텐츠 높이값에 svh를 사용해도 브라우저 주소창, 컨트롤바 사라짐에 따른 화면 변화가 있음, 고객이 오류로 인식하여 높이값 고정으로 작업"],
+      "skill": [ "vue", "html", "css", "javascript", "jquery", "gsap" ],
+      "image": [ "sangbong.jpg" ],
+      "github" : "",
+      "best": false
     }
   ]
   
