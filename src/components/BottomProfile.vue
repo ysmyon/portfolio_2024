@@ -42,10 +42,16 @@
                         <tr> 
                             <th>experience</th>
                             <td>
-                                <ul>
-                                    <li>2020.01 - 2022.05 누리웹</li>
-                                    <li>2023.09 - 재직중 넥스미디어</li>
-                                </ul>
+                                <table>
+                                    <tr>
+                                        <th>누리웹</th>
+                                        <td>2020.01 ~ 2022.05</td>
+                                    </tr>
+                                    <tr>
+                                        <th>넥스미디어</th>
+                                        <td>2023.09 ~ 재직중</td>
+                                    </tr>
+                                </table>
                             </td>
                         </tr>
                     </table>

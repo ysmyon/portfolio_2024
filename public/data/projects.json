@@ -356,7 +356,7 @@
       "work": ["Vue 기반 회사 템플릿을 이용해 분양사이트 구축, 메인페이지/서브페이지 퍼블", "적응형으로 제작"],
       "comment": ["적응형 홈페이지에 오픈이 1,2차 두 번에 걸쳐 이루어진 프로젝트라 작업시간이 생각보다 걸림", "fullpage.js 무료버전에서 자바스크립트를 이용해 좌우 이동이 되도록 작업"],
       "skill": [ "vue", "html", "css", "javascript", "jquery", "gsap" ],
-      "image": [ "yangju.jpg" ],
+      "image": [ "yangju_01.jpg" ],
       "github" : "",
       "best": false
     },
@@ -368,9 +368,9 @@
       "period": "2024.10.21 ~ 2024.10.25",
       "part": "Publishing : 100%",
       "work": ["Vue 기반 회사 템플릿을 이용해 분양사이트 구축, 메인페이지/서브페이지 퍼블", "반응형으로 제작"],
-      "comment": [""],
+      "comment": ["디자인 이슈로 다시 리뉴얼, 현재 화면에는 참여 하지않음"],
       "skill": [ "vue", "html", "css", "javascript", "jquery", "gsap" ],
-      "image": [ "yangju.jpg" ],
+      "image": [ "leel_01.jpg" ],
       "github" : "",
       "best": false
     },
@@ -386,7 +386,7 @@
       "skill": [ "vue", "html", "css", "javascript", "jquery", "gsap" ],
       "image": [ "sangbong.jpg" ],
       "github" : "",
-      "best": false
+      "best": true
     }
   ]
   
