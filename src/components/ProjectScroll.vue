@@ -77,7 +77,12 @@ export default {
                 } else {
                     tl.to(panel, {
                     yPercent: -100,
-                    ease: "none"
+                    ease: "none",
+                    onStart: function() {
+                        // 이전 패널에 아이디를 부여
+                        let prevPanel = panels[i - 1];
+                        prevPanel.id = `end_0${i}`; // end_01, end_02 형식으로 ID 부여
+                    }
                     }, "+=1")
                 }
             })
