@@ -9,7 +9,7 @@
       "work": ["반응형 홈페이지로 제작", "클라이언트와 커뮤니케이션을 위한 게시판형 홈페이지"],
       "comment": [""],
       "skill": [ "html", "css", "jquery"],
-      "image": [ "nuriweb_01.gif", "nuriweb_02.gif", "nuriweb_03.gif" ],
+      "image": [ "nuriweb_01.gif"],
       "github" : "",
       "best": false
     },
@@ -51,7 +51,7 @@
       "work": ["전체 페이지 리뉴얼", "반응형 페이지로 작업", "갤러리형 페이지"],
       "comment": [""],
       "skill": [ "html", "css", "jquery"],
-      "image": [ "gni_01.gif", "gni_02.gif", "gni_03.gif" ],
+      "image": [ "gni_01.gif"],
       "github" : "",
       "best": false
     },
@@ -65,7 +65,7 @@
       "work": ["반응형 홈페이지로 제작"],
       "comment": [""],
       "skill": [ "html", "css", "jquery", "javascript"],
-      "image": [ "foosung_01.gif", "foosung_02.gif", "foosung_03.gif", "foosung_04.gif" ],
+      "image": [ "foosung_01.gif"],
       "github" : "",
       "best": false
     },
@@ -93,7 +93,7 @@
       "work": ["반응형 홈페이지로 제작"],
       "comment": [""],
       "skill": [ "html", "css", "jquery" ],
-      "image": [ "incheon_01.gif", "incheon_02.gif", "incheon_03.gif" ],
+      "image": [ "incheon_01.gif"],
       "github" : "",
       "best": false
     },
@@ -121,7 +121,7 @@
       "work": ["반응형 홈페이지로 제작"],
       "comment": [""],
       "skill": [ "html", "css", "jquery"],
-      "image": [ "omni_01.gif", "omni_02.gif", "omni_03.gif" ],
+      "image": [ "omni_01.gif"],
       "github" : "",
       "best": false
     },
@@ -135,7 +135,7 @@
       "work": ["PC버전만 제작"],
       "comment": [""],
       "skill": [ "html", "css", "jquery", "javascript"],
-      "image": [ "gumdansu_01.gif", "gumdansu_02.gif" ],
+      "image": [ "gumdansu_01.gif" ],
       "github" : "",
       "best": false
     },
@@ -168,7 +168,7 @@
       ""],
       "comment": ["React를 이용한 첫 개인 프로젝트입니다. React 이외에 db와 서버 쪽도 작업을 해야했기에 어려움이 많았지만 Backend 쪽을 경험해 볼 수 있는 좋은 기회가 되었습니다."],
       "skill": [ "react", "javascript", "nodejs", "html", "css"],
-      "image": [ "mcl_01.gif", "mcl_02.gif", "mcl_03.gif", "mcl_04.gif" ],
+      "image": [ "mcl_01.gif" ],
       "github" : "https://github.com/marcoys/mcl_2",
       "best": false
     },
@@ -184,7 +184,7 @@
       "css에 변수와 중첩이 사용가능하여 가독성이 좋아지고 효율적인 css코딩이 가능했습니다.",
       "Component별로 scss파일을 구분하여 작업이 가능하여 수정 작업이 용이했습니다."],
       "skill": [ "react", "javascript", "sass", "html"],
-      "image": [ "portfolio_01.gif", "portfolio_02.gif", "portfolio_03.gif"],
+      "image": [ "portfolio_01.gif"],
       "github" : "https://github.com/marcoys/portfolio",
       "best": false
     },
@@ -201,7 +201,7 @@
       "리덕스 툴킷을 사용해봄으로써 상태관리의 편의성을 느낄 수 있었습니다. "
       ],
       "skill": [ "react", "javascript", "sass", "html"],
-      "image": [ "matchday_01.gif", "matchday_02.gif", "matchday_03.gif" ],
+      "image": [ "matchday_01.gif" ],
       "github" : "https://github.com/marcoys/matchday",
       "best": false
     },
@@ -216,7 +216,7 @@
       "comment": ["기존 포트폴리오가 맘에 안들어 다시 제작한 포트폴리오 사이트", "반응형으로 제작", "JSON 파일을 이용해 불필요하게 반복되는 코드를 방지"
       ],
       "skill": [ "react", "javascript", "sass", "html"],
-      "image": [ "port_new_01.gif", "port_new_02.gif", "port_new_03.gif", "port_new_04.gif" ],
+      "image": [ "port_new_01.gif" ],
       "github" : "https://github.com/marcoys/portfolio_new",
       "best": false
     },
@@ -230,7 +230,7 @@
       "work": ["Vue 기반 회사 템플릿을 이용해 분양사이트 구축,메인페이지/서브페이지 퍼블", "반응형으로 제작"],
       "comment": ["이직 후 첫 프로젝트", "실무에서 처음 접해보는 vue라 홈페이지 구조와 코드를 이해하는데 중점을 둠", "gsap도 실무에서의 첫 사용"],
       "skill": [ "vue", "html", "css", "javascript", "jquery", "gsap" ],
-      "image": [ "link_city_01.jpg", "link_city_02.jpg", "link_city_03.jpg", "link_city_04.jpg", "link_city_05.jpg", "link_city_06.jpg"],
+      "image": [ "link_city_01.jpg"],
       "github" : "",
       "best": false
     },
