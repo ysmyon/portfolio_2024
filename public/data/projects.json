@@ -300,7 +300,7 @@
       "work": ["Vue 기반 회사 템플릿을 이용해 분양사이트 구축, 메인페이지/서브페이지 퍼블", "적응형으로 제작"],
       "comment": [""],
       "skill": [ "vue", "html", "css", "javascript", "jquery", "gsap" ],
-      "image": [ "starcella_01.jpg", "starcella_02.jpg","starcella_03.jpg", "starcella_04.jpg", "starcella_05.jpg", "starcella_footer.jpg"  ],
+      "image": [ "starcella_01.jpg" ],
       "github" : "",
       "best": false
     },
